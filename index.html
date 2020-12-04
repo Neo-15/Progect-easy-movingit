@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css" >
+    <link rel="stylesheet" type="text/css" href="jquery/slick-1.8.1/slick/slick.css"/>
+    <title>Auto from USA</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">	
+         <div class="menu">
+           <div class="menu-logo">
+              <img class="menu-image" src="files/image/header/logo/Logo%20NEW2.svg" alt="logo">
+           </div>
+           <div class="menu-nav">
+             <div class="nav-burger">
+                <div class="nav-burger-bth"></div>
+             </div>	
+             <a class="menu-text" href="#">Меню</a>
+           </div>
+           <div class="menu-news">
+              <a class="menu-text" href="#">Новости</a>
+           </div>
+           <div class="menu-phone">
+              <a class="phone-nummer" href="tel:+380970770975" >+38 (097) 077 09 75</a>
+           </div>
+           <ul class="menu-lang">
+             <li class="menu-ru">
+               <div class="menu-ru-item">
+                 <img class="lang-img" src="files/image/header/lang/rusian.png">
+                 <div class="lang-text">РУС</div>
+                 <img class="lang-btn hide" src="files/image/header/lang/back.svg">
+               </div>
+			 </li>
+             <li class="menu-ua">
+               <div class="menu-ru-item">
+                  <img class="lang-img" src="files/image/header/lang/ukraine.png">
+                  <div class="lang-text">УКР</div>
+                  <img class="lang-btn hide" src="files/image/header/lang/back.svg">
+               </div>	
+             </li>
+             <li class="menu-eng visibility">
+               <div class="menu-ru-item">
+                  <img class="lang-img" src="files/image/header/lang/english.jpg"> 
+                  <div class="lang-text">ENG</div>
+                  <img class="lang-btn" src="files/image/header/lang/back.svg">
+               </div>
+              </li>
+            </ul>
+            <img class="enter-logo" src="files/image/header/enter/user.svg">
+            <div class="menu-enter">
+               <a class="enter-text" href="#">Войти</a>
+               <img class="enter-logo" src="files/image/header/enter/locked.svg">
+            </div>
+         </div>
+         <div class="menu-footer">
+           <div class="menu-item">Калькулятор Растаможки</div>
+           <div class="menu-item">Примеры ценообразования</div>
+           <div class="menu-item">Последовательность</div>
+           <div class="menu-item">Услуги</div>
+           <div class="menu-item">Подбор Авто</div>
+		   <div class="menu-item">Отзывы</div>
+           <div class="menu-item-last">Контакты</div>
+         </div>
+         <div class="intro">
+           <div class="container">
+              <div class="intro-content">
+                 <div class="intro-info">
+                    <h1 class="intro-title">Сервис доставки авто из США</h1>
+                    <div class="intro-subtitle">Покупайте автомобили выгодно вместе с нами</div>
+                    <div class="intro-text">Мы сделали доставку доступной и понятной каждому! Наш сервис Предоставляет прозрачную систему покупки
+автомобиля с аукционов США Copart, IAAI, Manheim</div>
+                 </div>
+                 <div class="intro-social">
+                    <a class="intro-Facebook" href="https://www.facebook.com/" target="_blank"></a>
+                    <a class="intro-instagram"  href="https://www.instagram.com/" target="_blank"></a>
+                    <a class="intro-youtube"  href="https://www.youtube.com/" target="_blank"></a>
+                    <a class="intro-telegram" href="https://web.telegram.org/" target="_blank"></a>
+                 </div>
+              </div>
+              <div class="intro-bottom">
+                 <div class="intro-contents">
+                    <div class="phone-text">Укажите ваш номер телефона и получите полную, квалифицированную консультацию <span class="phone-pay">БЕСПЛАТНО</span></div>	
+                    <form action="#" method="post" class="phone_form">
+	                   <div class="user_phone">
+  		               <input type="text" placeholder="+38 (0__) ___ __ __" id="phone" class="user-phone" title="Формат: +38 (096) 999 99 99"/>
+		               <input type="submit" class="btn_submit" value="Заказать" />
+	                   </div>
+                    </form>
+                  </div>
+               </div>	
+            </div>
+          </div><!--intro-->
+        </div><!--container-->
+   </header>
+   <div class="calculator">
+        <div class="container">
+		  <form class="cars-calculator" method="post">
+           <div class="calculator-title">Калькулятор растаможки авто из США</div>
+	       <div class="calculator-cars">
+	          <div class="cars-item">
+				 <label for="choise-1" class="cars-photo-label"></label>
+				 <input class="cars-radio"  type="radio" id="choise-1" name="choise" value="moto">
+				 <label for="choise-1" class="cars-label"> Мото</label>
+			    </div> 
+			   	 <div class="cars-item">
+				 <label for="choise-2" class="cars-photo-label"></label>
+				 <input class="cars-radio"  type="radio" id="choise-2" name="choise" value="car">
+				 <label for="choise-2" class="cars-label"> Легковые</label>
+			    </div> 
+			    <div class="cars-item">
+				 <label for="choise-3" class="cars-photo-label"></label>
+				 <input class="cars-radio"  type="radio" id="choise-3" name="choise" value="electro">
+				 <label for="choise-3" class="cars-label"> Електро</label>
+			    </div> 
+			    <div class="cars-item">
+				 <label for="choise-4" class="cars-photo-label"></label>
+				 <input class="cars-radio"  type="radio" id="choise-4" name="choise" value="pikap">
+				 <label for="choise-4" class="cars-label"> Пикап</label>
+			    </div> 
+	       <div class="calculator-field">
+	           <div class="calculator-content">
+	              <input type="text" class="calculator-item-skan" name="skanfield" id="skanin" placeholder="Вставте ссылку из Copart, IAAI, Manhelm">
+	              <input type="submit" class="calculator-btn-skan" value="Сканировать">
+		          <div class="calculator-contents">
+				   <input type="text" class="calculator-item" name="prise" id="prises" value="Цена">
+		            <div class="calculator-logo">
+		               <img class="calculator-img" src="files/image/calculator/logo/dollar.svg" width="10" height="17">
+		            </div>	
+		          </div>
+		          <div class="calculator-contents">
+		             <label for="aucsion" class="calculator-item">  <div class="calculator-info"></div> Сбор аукциона
+					  <input type="text" class="calculator-item-input" name="ayksion" id="aucsion" value="100" readonly>
+					  <label class="calculator-item-dolar" for="aucsion">$</label>
+		            </label>   
+		          </div>
+				  <div class="calculator-contents">
+		             <label for="aksyz" class="calculator-item">  <div class="calculator-info"></div> Акциз
+					  <input type="text" class="calculator-item-input" name="aksys" id="aksyz" value="300" readonly>
+					  <label class="calculator-item-dolar" for="aksyz">$</label>
+		            </label>   
+		          </div>
+		          <div class="calculator-contents">
+		            <input type="number" class="calculator-item" name="engyns" placeholder="Объем двигателя" id="engyn" value="#">
+		            <div class="calculator-logo">
+		              <img class="calculator-img" src="files/image/calculator/logo/motor.svg" width="23" height="16">
+		            </div>	
+		          </div>
+		          <div class="calculator-contents">
+		             <label for="agensys" class="calculator-item">  <div class="calculator-info"></div> Агентские услуги
+					  <input type="text" class="calculator-item-input" name="agensy" id="agensys" value="100" readonly>
+					  <label class="calculator-item-dolar" for="agensys">$</label>
+		            </label>   
+		          </div>
+		          <div class="calculator-contents">
+		             <label for="podatok" class="calculator-item">  <div class="calculator-info"></div> Пошлина
+					  <input type="text" class="calculator-item-input" name="podatock" id="podatok" value="300" readonly>
+					  <label class="calculator-item-dolar" for="podatok">$</label>
+		            </label>   
+		          </div>
+		          <div class="calculator-contents">
+		             <input type="text" class="calculator-item" name="years" id="year" placeholder="Год выпуска">
+		             <div class="calculator-logo">
+		                <img class="calculator-img" src="files/image/calculator/logo/calendar.svg" width="17" height="17">
+		             </div>
+		          </div>
+		          <div class="calculator-contents">
+		             <label for="dostavka" class="calculator-item">  <div class="calculator-info"></div> Доставка по суше
+					  <input type="text" class="calculator-item-input" name="dostavca" id="dostavka" value="100" readonly>
+					  <label class="calculator-item-dolar" for="dostavka">$</label>
+		            </label>   
+		          </div>
+		           <div class="calculator-contents">
+		             <label for="NDS" class="calculator-item">  <div class="calculator-info"></div> НДС
+					  <input type="text" class="calculator-item-input" name="NDC" id="NDS" value="100" readonly>
+					  <label class="calculator-item-dolar" for="NDS">$</label>
+		            </label>   
+		          </div>
+		          <div class="calculator-contents">
+		            <select class="calculator-item" name="For-sale" id="For-sales" placeholder="Аукцион">
+					<option class="copart" default disabled selected>Аукцион </option> 
+					<option class="copart">Copart</option>
+					<option class="copart">IAAI</option>
+					<option class="copart">Manheim</option>
+				   </select>
+					<div class="calculator-logo">
+		              <img class="calculator-img" src="files/image/calculator/logo/auction.svg" width="20" height="20">
+		            </div>  
+					</div>
+					 <div class="calculator-contents">
+		             <label for="dostavka-sea" class="calculator-item">  <div class="calculator-info"></div> Доставка по морю
+					  <input type="text" class="calculator-item-input" name="dostavka-seas" id="dostavka-sea" value="100" readonly>
+					  <label class="calculator-item-dolar" for="dostavka-sea">$</label>
+		            </label>   
+		          </div>
+		          <div class="calculator-contents">
+		             <label for="document" class="calculator-item">  <div class="calculator-info"></div> Отправка документов
+					  <input type="text" class="calculator-item-input" name="document-get" id="document" value="100" readonly>
+					  <label class="calculator-item-dolar" for="document">$</label>
+		            </label>   
+		          </div>
+		            <div class="calculator-contents">
+		            <select class="calculator-item" name="Export" id="export-usa">
+					<option class="copart" default disabled selected>Доставка США</option> 
+					<option class="copart">AK-Alaska</option>
+					<option class="copart">AL-Alabama</option>
+					<option class="copart">CA-California</option><option class="copart">FL-Florida</option><option class="copart">IA-Iowa</option>
+				   </select>
+					<div class="calculator-logo active">
+		              <img class="calculator-img active" src="files/image/calculator/logo/auction.svg" width="20" height="20">
+		            </div>  
+					</div>
+		           <div class="calculator-contents">
+		             <label for="expeditor" class="calculator-item">  <div class="calculator-info"></div> Експедитор Одесса
+					  <input type="text" class="calculator-item-input" name="expeditor-odesa" id="expeditor" value="100" readonly>
+					  <label class="calculator-item-dolar" for="expeditor">$</label>
+		            </label>   
+		          </div>
+		           <div class="calculator-contents">
+		             <label for="terminal" class="calculator-item">  <div class="calculator-info"></div> Стоянка на евротерминале
+					  <input type="text" class="calculator-item-input" name="terminal-evro" id="terminal" value="100" readonly>
+					  <label class="calculator-item-dolar" for="terminal">$</label>
+		            </label>   
+		          </div> 
+				   <div class="calculator-contents">
+		            <select class="calculator-item" name="Insurances" id="Insurance">
+					<option class="copart" default disabled selected>Cтраховка</option> 
+					<option class="copart">без страховки</option>
+					<option class="copart">авто з повреждениями</option>
+					<option class="copart">авто без повреждений</option>
+				   </select>
+					<div class="calculator-logo">
+		             <img class="calculator-img" src="files/image/calculator/logo/auto-insurance.svg" width="22" height="18">
+		            </div>  
+					</div>
+				     <div class="calculator-contents">
+		             <label for="tamogna" class="calculator-item">  <div class="calculator-info"></div> Таможенный брокер
+					  <input type="text" class="calculator-item-input" name="tamogna-broker" id="tamogna" value="100" readonly>
+					  <label class="calculator-item-dolar" for="tamogna">$</label>
+		            </label>   
+		          </div> 
+				   <div class="calculator-contents">
+		             <label for="strahovka" class="calculator-item">  <div class="calculator-info"></div> Страховка авто
+					  <input type="text" class="calculator-item-input" name="strahovka-avto" id="strahovka" value="100" readonly>
+					  <label class="calculator-item-dolar" for="terminal">$</label>
+		            </label>   
+		          </div> 
+		              <div class="calculator-end">
+		                <div class="calculator-sum">
+		                   <div class="calculator-sum-text">Общая сумма:</div>
+		                   <div class="calculator-contents-sum">
+		                      <input type="text" class="calculator-suma" name="car-strah" id="skanin" value="0" readonly>
+		                      <div class="calculator-logo suma">
+		                         <img class="calculator-img" src="files/image/calculator/logo/dollar.svg" width="10" height="17">
+		                      </div>
+		                   </div>
+		                 </div>
+		                 <div class="calculator-generator">
+		                    <input type="submit" value="Cгенерировать в PDF" class="calculator-btn-generator">
+		                    <img class="generator-img" src="files/image/calculator/logo/pdf.svg" width="20" height="19">
+		                 </div>	
+		              </div>
+				     </div>
+			        </div>
+			       </div><!--calculator-field-->
+				</form>	
+           </div><!--container-->
+        </div><!--calculator-->
+	    <div class="examples">
+	      <div class="container">
+	         <div class="example-title">Примеры ценообразования и выгоды  авто из  Штатов</div>
+	            <div class="example-car">
+	               <div class="cars-prise-content">
+	                 <img class="cars-prise-img" src="files/image/example/car-image/car-1.png">
+	                 <div class="cars-name-data">Mazda 3  2013</div>
+	                 <div class="cars-prise">
+	                   <div class="prise-in-USA">Цена в США</div>
+	                   <div class="car-money"><span class="car-dolar">$</span>1 500</div>
+	                   <div class="car-prise-items">
+	                      <div class="name-item">Сбор аукцион</div>
+	                      <div class="car-money-item"><span class="car-dolar">$</span>437</div>
+	                   </div>
+	                   <div class="car-prise-items">
+	                     <div class="name-item">Доставка</div>
+	                     <div class="car-money-item"><span class="car-dolar">$</span>1 400</div>
+	                    </div>
+	                    <div class="car-prise-items">
+	                      <div class="name-item">Растаможка</div>
+	                      <div class="car-money-item"><span class="car-dolar">$</span>1 718</div>
+	                    </div>
+	                    <div class="car-prise-items">
+	                      <div class="name-item">Порт Одесса</div>
+	                      <div class="car-money-item"><span class="car-dolar">$</span>950</div>
+	                    </div>
+	                    <div class="car-prise-items">
+	                       <div class="name-item">Ремонт</div>
+	                       <div class="car-money-item"><span class="car-dolar">$</span>1 000</div>
+	                    </div>
+	                    <div class="car-prise-items">
+	                       <div class="name-item">Сертификат</div>
+	                       <div class="car-money-item"><span class="car-dolar">$</span>300</div>
+	                    </div>
+	                    <div class="car-prise-items">
+	                      <div class="name-item">МРЭС</div>
+	                      <div class="car-money-item"><span class="car-dolar">$</span>100</div>
+	                    </div>
+	                    <div class="car-prise-items">
+	                      <div class="name-item">Услуги</div>
+	                      <div class="car-money-item"><span class="car-dolar">$</span>1 000</div>
+	                    </div>
+	                    <div class="car-prise-items-key">
+	                       <div class="name-item-key">Под ключ в Украине</div>
+	                       <div class="car-money-item-key"><span class="car-dolar">$</span>9 005</div>
+	                    </div>
+	                    <div class="car-prise-items-autoria">
+	                      <div class="name-item-key">Средняя цена  auto.ria</div>
+	                      <div class="car-money-item-key"><span class="car-dolar">$</span>11 500</div>
+	                    </div>
+	                  </div><!--car-praci-->
+	                </div><!--car-prise-content-->
+	                <div class="cars-prise-content">
+	                  <img class="cars-prise-img" src="files/image/example/car-image/car-2.png">
+	                  <div class="cars-name-data">BMW 535I</div>
+	                  <div class="cars-prise">
+	                     <div class="prise-in-USA">Цена в США</div>
+	                     <div class="car-money"><span class="car-dolar">$</span>9 000</div>
+	                     <div class="car-prise-items">
+	                       <div class="name-item">Сбор аукцион</div>
+	                       <div class="car-money-item"><span class="car-dolar">$</span>725</div>
+	                     </div>
+	                     <div class="car-prise-items">
+	                        <div class="name-item">Доставка</div>
+	                        <div class="car-money-item"><span class="car-dolar">$</span>1 400</div>
+	                     </div>
+	                     <div class="car-prise-items">
+	                         <div class="name-item">Растаможка</div>
+	                         <div class="car-money-item"><span class="car-dolar">$</span>4 487</div>
+	                     </div>
+	                     <div class="car-prise-items">
+	                       <div class="name-item">Порт Одесса</div>
+	                       <div class="car-money-item"><span class="car-dolar">$</span>950</div>
+	                     </div>
+	                     <div class="car-prise-items">
+	                        <div class="name-item">Ремонт</div>
+	                        <div class="car-money-item"><span class="car-dolar">$</span>950</div>
+	                     </div>
+	                     <div class="car-prise-items">
+	                        <div class="name-item">Сертификат</div>
+	                        <div class="car-money-item"><span class="car-dolar">$</span>3 000</div>
+	                     </div>
+	                     <div class="car-prise-items">
+	                        <div class="name-item">МРЭС</div>
+	                        <div class="car-money-item"><span class="car-dolar">$</span>445</div>
+	                     </div>
+	                     <div class="car-prise-items">
+	                       <div class="name-item">Услуги</div>
+	                       <div class="car-money-item"><span class="car-dolar">$</span>1 000</div>
+	                     </div>
+	                     <div class="car-prise-items-key">
+	                        <div class="name-item-key">Под ключ в Украине</div>
+	                        <div class="car-money-item-key"><span class="car-dolar">$</span>20 862</div>
+	                     </div>
+	                     <div class="car-prise-items-autoria">
+	                        <div class="name-item-key">Средняя цена  auto.ria</div>
+	                        <div class="car-money-item-key"><span class="car-dolar">$</span>28 000</div>
+	                     </div>
+	                   </div><!--car-prise-->
+	                </div><!--car-prise-content-->
+	                <div class="cars-prise-content">
+	                   <img class="cars-prise-img" src="files/image/example/car-image/car-3.png">
+	                   <div class="cars-name-data">VW Tiguan  2016</div>
+	                   <div class="cars-prise">
+	                      <div class="prise-in-USA">Цена в США</div>
+	                      <div class="car-money"><span class="car-dolar">$</span>4 800</div>
+	                      <div class="car-prise-items">
+	                          <div class="name-item">Сбор аукцион</div>
+	                          <div class="car-money-item"><span class="car-dolar">$</span>635</div>
+	                      </div>
+	                      <div class="car-prise-items">
+	                         <div class="name-item">Доставка</div>
+	                         <div class="car-money-item"><span class="car-dolar">$</span>1 400</div>
+	                      </div>
+	                      <div class="car-prise-items">
+	                        <div class="name-item">Растаможка</div>
+	                        <div class="car-money-item"><span class="car-dolar">$</span>2421</div>
+	                      </div>
+	                      <div class="car-prise-items">
+	                         <div class="name-item">Порт Одесса</div>
+	                         <div class="car-money-item"><span class="car-dolar">$</span>950</div>
+	                      </div>
+	                      <div class="car-prise-items">
+	                         <div class="name-item">Ремонт</div>
+	                         <div class="car-money-item"><span class="car-dolar">$</span>2800</div>
+	                      </div>
+	                      <div class="car-prise-items">
+	                         <div class="name-item">Сертификат</div>
+	                         <div class="car-money-item"><span class="car-dolar">$</span>300</div>
+	                      </div>
+	                      <div class="car-prise-items">
+	                         <div class="name-item">МРЭС</div>
+	                         <div class="car-money-item"><span class="car-dolar">$</span>100</div>
+	                      </div>
+	                      <div class="car-prise-items">
+	                         <div class="name-item">Услуги</div>
+	                         <div class="car-money-item"><span class="car-dolar">$</span>1 000</div>
+	                      </div>
+	                      <div class="car-prise-items-key">
+	                         <div class="name-item-key">Под ключ в Украине</div>
+	                         <div class="car-money-item-key"><span class="car-dolar">$</span>14 406</div>
+	                      </div>
+	                      <div class="car-prise-items-autoria">
+	                         <div class="name-item-key">Средняя цена  auto.ria</div>
+	                         <div class="car-money-item-key"><span class="car-dolar">$</span>18 000</div>
+	                      </div>
+	                   </div><!--car-prise-->
+	               </div><!--car-prise-content-->
+	               <div class="cars-prise-content">
+	               <img class="cars-prise-img" src="files/image/example/car-image/car-4.png">
+	               <div class="cars-name-data">VW Tiguan  2016</div>
+	               <div class="cars-prise">
+	                  <div class="prise-in-USA">Цена в США</div>
+	                  <div class="car-money"><span class="car-dolar">$</span>4 800</div>
+	               <div class="car-prise-items">
+	                   <div class="name-item">Сбор аукцион</div>
+	                   <div class="car-money-item"><span class="car-dolar">$</span>635</div>
+	               </div>
+	               <div class="car-prise-items">
+	                  <div class="name-item">Доставка</div>
+	                  <div class="car-money-item"><span class="car-dolar">$</span>1 400</div>
+	               </div>
+	               <div class="car-prise-items">
+	                 <div class="name-item">Растаможка</div>
+	                 <div class="car-money-item"><span class="car-dolar">$</span>2421</div>
+	               </div>
+	               <div class="car-prise-items">
+	                 <div class="name-item">Порт Одесса</div>
+	                 <div class="car-money-item"><span class="car-dolar">$</span>950</div>
+	               </div>
+	               <div class="car-prise-items">
+	                  <div class="name-item">Ремонт</div>
+	                  <div class="car-money-item"><span class="car-dolar">$</span>2800</div>
+	               </div>
+	               <div class="car-prise-items">
+	                 <div class="name-item">Сертификат</div>
+	                 <div class="car-money-item"><span class="car-dolar">$</span>300</div>
+	               </div>
+	               <div class="car-prise-items">
+	                   <div class="name-item">МРЭС</div>
+	                   <div class="car-money-item"><span class="car-dolar">$</span>100</div>
+	               </div>
+	               <div class="car-prise-items">
+	                  <div class="name-item">Услуги</div>
+	                  <div class="car-money-item"><span class="car-dolar">$</span>1 000</div>
+	               </div>
+	               <div class="car-prise-items-key">
+	                  <div class="name-item-key">Под ключ в Украине</div>
+	                  <div class="car-money-item-key"><span class="car-dolar">$</span>14 406</div>
+	               </div>
+	               <div class="car-prise-items-autoria">
+	                  <div class="name-item-key">Средняя цена  auto.ria</div>
+	                  <div class="car-money-item-key"><span class="car-dolar">$</span>18 000</div>
+	               </div>
+	            </div><!--cars-prise-->
+	          </div><!--cars-prise-content-->
+	          <div class="cars-prise-content">
+	             <img class="cars-prise-img" src="files/image/example/car-image/car-5.png">
+	             <div class="cars-name-data">VW Tiguan  2016</div>
+	             <div class="cars-prise">
+	               <div class="prise-in-USA">Цена в США</div>
+	               <div class="car-money"><span class="car-dolar">$</span>4 800</div>
+	               <div class="car-prise-items">
+	                 <div class="name-item">Сбор аукцион</div>
+	                 <div class="car-money-item"><span class="car-dolar">$</span>635</div>
+	               </div>
+	               <div class="car-prise-items">
+	                  <div class="name-item">Доставка</div>
+	                  <div class="car-money-item"><span class="car-dolar">$</span>1 400</div>
+	               </div>
+	               <div class="car-prise-items">
+	                  <div class="name-item">Растаможка</div>
+	                  <div class="car-money-item"><span class="car-dolar">$</span>2421</div>
+	               </div>
+	               <div class="car-prise-items">
+	                  <div class="name-item">Порт Одесса</div>
+	                  <div class="car-money-item"><span class="car-dolar">$</span>950</div>
+	               </div>
+	               <div class="car-prise-items">
+	                 <div class="name-item">Ремонт</div>
+	                 <div class="car-money-item"><span class="car-dolar">$</span>2800</div>
+	               </div>
+	               <div class="car-prise-items">
+	                 <div class="name-item">Сертификат</div>
+	                 <div class="car-money-item"><span class="car-dolar">$</span>300</div>
+	              </div>
+	              <div class="car-prise-items">
+	                <div class="name-item">МРЭС</div>
+	                <div class="car-money-item"><span class="car-dolar">$</span>100</div>
+	              </div>
+	              <div class="car-prise-items">
+	                <div class="name-item">Услуги</div>
+	                <div class="car-money-item"><span class="car-dolar">$</span>1  000</div>
+	              </div>
+	              <div class="car-prise-items-key">
+	                <div class="name-item-key">Под ключ в Украине</div>
+	                <div class="car-money-item-key"><span class="car-dolar">$</span>14 406</div>
+	              </div>
+	              <div class="car-prise-items-autoria">
+	                <div class="name-item-key">Средняя цена  auto.ria</div>
+	                <div class="car-money-item-key"><span class="car-dolar">$</span>18 000</div>
+	              </div>
+	           </div>
+	        </div>
+	        <div class="cars-prise-content">
+	        <img class="cars-prise-img" src="files/image/example/car-image/car-6.png">
+	        <div class="cars-name-data">VW Tiguan  2016</div>
+	        <div class="cars-prise">
+	          <div class="prise-in-USA">Цена в США</div>
+	          <div class="car-money"><span class="car-dolar">$</span>4 800</div>
+	          <div class="car-prise-items">
+	             <div class="name-item">Сбор аукцион</div>
+	             <div class="car-money-item"><span class="car-dolar">$</span>635</div>
+	          </div>
+	          <div class="car-prise-items">
+	            <div class="name-item">Доставка</div>
+	            <div class="car-money-item"><span class="car-dolar">$</span>1 400</div>
+	          </div>
+	          <div class="car-prise-items">
+	            <div class="name-item">Растаможка</div>
+	            <div class="car-money-item"><span class="car-dolar">$</span>2421</div>
+	          </div>
+	          <div class="car-prise-items">
+	            <div class="name-item">Порт Одесса</div>
+	            <div class="car-money-item"><span class="car-dolar">$</span>950</div>
+	          </div>
+	          <div class="car-prise-items">
+	            <div class="name-item">Ремонт</div>
+	            <div class="car-money-item"><span class="car-dolar">$</span>2800</div>
+	          </div>
+	          <div class="car-prise-items">
+	             <div class="name-item">Сертификат</div>
+	             <div class="car-money-item"><span class="car-dolar">$</span>300</div>
+	          </div>
+	          <div class="car-prise-items">
+	             <div class="name-item">МРЭС</div>
+	             <div class="car-money-item"><span class="car-dolar">$</span>100</div>
+	          </div>
+	          <div class="car-prise-items">
+	             <div class="name-item">Услуги</div>
+	             <div class="car-money-item"><span class="car-dolar">$</span>1 000</div>
+	          </div>
+	          <div class="car-prise-items-key">
+	            <div class="name-item-key">Под ключ в Украине</div>
+	            <div class="car-money-item-key"><span class="car-dolar">$</span>14 406</div>
+	          </div>
+	          <div class="car-prise-items-autoria">
+	            <div class="name-item-key">Средняя цена  auto.ria</div>
+	            <div class="car-money-item-key"><span class="car-dolar">$</span>18 000</div>
+	          </div>
+	        </div><!--cars-prise-->
+	      </div><!--cars-prise-content-->
+	    </div><!--example-car-->
+	   </div><!--container-->
+	 </div><!--examples-->
+	 <div class="step-work">
+	   <div class="container">
+	      <div class="step-title">Последовательность нашей работы</div>
+	      <div class="steps">
+	      <div class="step-item">
+	         <div class="step-content">
+	           <img src="files/image/step/icon-steps/Auto.svg" width="110" height="75">
+	           <div class="step-text">Подбор авто</div>
+	         </div>
+	      </div>
+	      <div class="step-item second">
+	        <div class="step-content">
+	          <img src="files/image/step/icon-steps/Search.svg" width="75" height="85">
+	          <div class="step-text">Проверка в $ базах</div>
+	        </div>
+	      </div>
+	      <div class="step-item second">
+	        <div class="step-content">
+	          <img src="files/image/step/icon-steps/Auk.svg" width="110" height="75">
+	          <div class="step-text">Выкуп с аукциона</div>
+	        </div>
+	      </div>
+	      <div class="step-item last">
+	         <div class="step-content">
+	           <img src="files/image/step/icon-steps/car.svg" width="110" height="75">
+	           <div class="step-text">Страховка</div>
+	         </div>
+	      </div>
+	      <div class="step-item first middle">
+	        <div class="step-content">
+	           <img src="files/image/step/icon-steps/uploading.svg" width="40" height="75">
+	           <div class="step-text">Погрузка</div>
+	        </div>
+	      </div>
+	      <div class="step-item second middle">
+	         <div class="step-content">
+	           <img src="files/image/step/icon-steps/ship.svg" width="110" height="75">
+	           <div class="step-text">Отправка</div>
+	         </div>
+	      </div>
+	      <div class="step-item second middle">
+	        <div class="step-content">
+	           <img src="files/image/step/icon-steps/bill.svg" width="88" height="93">
+	           <div class="step-text">Растаможка</div>
+	        </div>
+	      </div>
+	      <div class="step-item last">
+	         <div class="step-content">
+	           <img src="files/image/step/icon-steps/delivery.svg" width="125" height="90">
+	           <div class="step-text">Доставка</div>
+	         </div>
+	      </div>
+	      <div class="step-item bottom">
+	         <div class="step-content">
+	             <img src="files/image/step/icon-steps/spare%20parts.svg" width="88" height="88">
+	             <div class="step-text">Запчасти</div>
+	         </div>
+	      </div>
+	      <div class="step-item bottom">
+	         <div class="step-content">
+	            <img src="files/image/step/icon-steps/repair.svg" width="90" height="90">
+	            <div class="step-text">Ремонт</div>
+	         </div>
+	      </div>
+	      <div class="step-item bottom">
+	         <div class="step-content">
+	             <img src="files/image/step/icon-steps/certificate.svg" width="85" height="85">
+                 <div class="step-text">Сертификация</div>
+	         </div>
+	      </div>
+	      <div class="step-item last bottom">
+	        <div class="step-content">
+	           <img src="files/image/step/icon-steps/car%20ready.svg" width="80" height="95">
+	           <div class="step-text">Ваше авто готово</div>
+	        </div>
+	      </div>
+	    </div><!--steps-->
+	   </div><!--container-->
+	</div><!--steps-work-->
+	<div class="tariff">
+	   <div class="container">
+	     <div class="tariff-title">Тарифная сетка на услуги</div>
+	     <form>	
+	       <div class="tariff-content">
+	          <div class="tariff-item">
+	             <div class="item-title">Максимальный</div>
+	             <div class="item-prise"><span class="item-dolar">$</span>1 000</div>
+	             <div class="item-hidden" id="max">
+	                <input type="button" class="hidden-btn" id="hidden-max">
+	             </div>
+	             <ul class="item-package">
+	                <div class="package-title">Заказывая данный пакет услуг вы получаете такие возможности:</div>
+	                <li class="package-li">Анализ внутреннего авторынка Украины и США.</li>
+	                <li class="package-li">Индивидуальный подбор авто 
+		на аукционах США.</li>
+	                <li class="package-li">Предварительную смету цены авто
+		на номерах в Украине, детально прописанную по пунктах.</li>
+	                <li class="package-li">Возможность следитьза торгами на аукционах.</li>
+	                <li class="package-li">Максимальная скидка
+		на аукционный сбор.  </li>
+	                <li class="package-li">Опытные логистические компании и качественные услуги упаковки авто в контейнер. </li>
+	                <li class="package-li">Доступ в личный кабинет покупателя с помощью, которого вам будет понятно и легко с нами взаимодействовать. </li>
+	                <li class="package-li">Прозрачная система оплаты. </li>
+	                <li class="package-li">Подбор автозапчастей.</li>
+	                <li class="package-li">Услуги по ремонту авто. </li>
+	                <li class="package-li">Прохождение сертификации. </li>
+	            </ul>
+	            <div class="package-btn">
+	               <input type="submit" class="item-btn" value="Заказать">
+	            </div>
+	       </div>
+	       <div class="tariff-item">
+	          <div class="item-title">Двойной</div>
+	          <div class="item-prise"><span class="item-dolar">$</span>500</div>
+	          <div class="item-hidden" id="duals">
+	             <input type="button" class="hidden-btn" id="hidden-dual">
+	          </div>
+	          <div class="package-text-dual">Заказав сразу несколько
+автомобилей вы получаете скидку 50%
+на пакет Максимальный.</div>
+	          <div class="package-btn">
+	             <input type="submit" class="item-btn" value="Заказать">
+	          </div>
+	       </div>
+	       <div class="tariff-item">
+	          <div class="item-title">Партнерский</div>
+	          <div class="item-prise">Цена Индивидуально</div>
+	          <div class="item-hidden" id="individualy">
+	             <input type="button" class="hidden-btn" id="individual">
+	          </div>
+	          <div class="package-content">Заказывая данный пакет услуг вы получаете такие возможности:</div>
+	          <div class="package-btn">
+	             <input type="submit" class="item-btn" value="Заказать">
+	          </div>
+	        </div>
+	      </div><!--tarif-content-->
+	    </form>
+	  </div><!--container-->
+	</div><!--tariff-->
+    <div class="selection-car">
+	  <div class="container">
+	    <div class="selection-title">Подбор авто из США</div>
+	      <div class="selection-content">
+		      <img src="files/image/selection/car/P6YT46%D1%861.png" class="item-car">
+		      <div class="item-car-ground" id="motos"></div>
+		      <div class="item-car-suptitle">Мото</div>
+	        </div>
+			<div class="selection-item" id="sedan">
+		      <img src="files/image/selection/car/sedan.png" class="item-car">
+		      <div class="item-car-ground" id="sed"></div>
+		      <div class="item-car-suptitle">Седан</div>
+	        </div>
+			<div class="selection-item" id="cupe">
+		      <img src="files/image/selection/car/cupe.png" class="item-car">
+		      <div class="item-car-ground" id="cup"></div>
+		      <div class="item-car-suptitle">Купе</div>
+	        </div>
+			<div class="selection-item" id="tesla">
+		      <img src="files/image/selection/car/tesla.png" class="item-car">
+		      <div class="item-car-ground" id="tes"></div>
+		      <div class="item-car-suptitle">Електрокар</div>
+	        </div>
+			<div class="selection-item" id="underground">
+		      <img src="files/image/selection/car/underground.png" class="item-car">
+		      <div class="item-car-ground" id="under"></div>
+		      <div class="item-car-suptitle">Внедорожник</div>
+	        </div>
+			<div class="selection-item" id="pikap">
+		      <img src="files/image/selection/car/pikap.png" class="item-car">
+		      <div class="item-car-ground" id="pik"></div>
+		      <div class="item-car-suptitle">Пикап</div>
+	        </div>
+			<div class="selection-item" id="miniven">
+		      <img src="files/image/selection/car/miniven.png" class="item-car" width="180" height="70">
+		      <div class="item-car-ground" id="min"></div>
+		      <div class="item-car-suptitle">Минивен</div>
+	        </div>
+			<div class="selection-item" id="bus">
+		      <img src="files/image/selection/car/bus.png" class="item-car" width="180" height="70">
+		      <div class="item-car-ground" id="buss"></div>
+		      <div class="item-car-suptitle">Бус</div>
+	        </div>
+	      </div>
+		  <div class="selection-calculator">
+			<form action="#" method="post" class="phone_form">
+	          <div class="user_phone">
+  		         <input type="text" placeholder="+38 (0__) ___ __ __" id="phone" class="user-phone" title="Формат: +38 (096) 999 99 99"/>
+			  </div>
+			</form>
+	  </div><!--container-->
+    </div><!--selection-car-->
+	<div class="reviev">
+	  <div class="container">
+		<div class="reviev-title">Отзывы</div>
+		<div class="reviev-content">
+		    <div class="reviev-item">
+		      <img class="reviev-image" src="files/image/reviev/photo.png" width="120" height="120">
+			  <div class="reviev-content-background">
+		        <div class="reviev-item-title">Ричард Ройтман</div>
+		        <div class="reviev-text">Excepteur sint occaecat cupidatat non proident, sunt insides culpa qui officia deserunt mollit anim id eston laborum. Sed ut perspiciatis unde omnis iste natus error sitire voluptatem accusant doloremque laudantium, totamie rem aperiam, eaque ipsa quae. </div>
+		        <div class="reviev-image-background">
+		        <img  src="files/image/reviev/%E2%80%98%E2%80%98.png" width="67" height="52">
+		        </div>
+		     </div>
+		   </div>
+		    <div class="reviev-item">
+		      <img class="reviev-image" src="files/image/reviev/photo.png" width="120" height="120">
+			  <div class="reviev-content-background">
+		        <div class="reviev-item-title">Ричард Ройтман</div>
+		        <div class="reviev-text">Excepteur sint occaecat cupidatat non proident, sunt insides culpa qui officia deserunt mollit anim id eston laborum. Sed ut perspiciatis unde omnis iste natus error sitire voluptatem accusant doloremque laudantium, totamie rem aperiam, eaque ipsa quae. </div>
+		        <div class="reviev-image-background">
+		        <img  src="files/image/reviev/%E2%80%98%E2%80%98.png" width="67" height="52">
+		        </div>
+		     </div>
+		   </div>
+		    <div class="reviev-item">
+		      <img class="reviev-image" src="files/image/reviev/photo.png" width="120" height="120">
+			  <div class="reviev-content-background">
+		        <div class="reviev-item-title">Ричард Ройтман</div>
+		        <div class="reviev-text">Excepteur sint occaecat cupidatat non proident, sunt insides culpa qui officia deserunt mollit anim id eston laborum. Sed ut perspiciatis unde omnis iste natus error sitire voluptatem accusant doloremque laudantium, totamie rem aperiam, eaque ipsa quae. </div>
+		        <div class="reviev-image-background">
+		        <img  src="files/image/reviev/%E2%80%98%E2%80%98.png" width="67" height="52">
+		        </div>
+		     </div>
+		   </div>
+		   <div class="reviev-item">
+		      <img class="reviev-image" src="files/image/reviev/photo.png" width="120" height="120">
+			  <div class="reviev-content-background">
+		        <div class="reviev-item-title">Ричард Ройтман</div>
+		        <div class="reviev-text">Excepteur sint occaecat cupidatat non proident, sunt insides culpa qui officia deserunt mollit anim id eston laborum. Sed ut perspiciatis unde omnis iste natus error sitire voluptatem accusant doloremque laudantium, totamie rem aperiam, eaque ipsa quae. </div>
+		        <div class="reviev-image-background">
+		        <img  src="files/image/reviev/%E2%80%98%E2%80%98.png" width="67" height="52">
+		        </div>
+		       </div>
+		     </div>
+			 <div class="reviev-item">
+		      <img class="reviev-image" src="files/image/reviev/photo.png" width="120" height="120">
+			  <div class="reviev-content-background">
+		        <div class="reviev-item-title">Ричард Ройтман</div>
+		        <div class="reviev-text">Excepteur sint occaecat cupidatat non proident, sunt insides culpa qui officia deserunt mollit anim id eston laborum. Sed ut perspiciatis unde omnis iste natus error sitire voluptatem accusant doloremque laudantium, totamie rem aperiam, eaque ipsa quae. </div>
+		        <div class="reviev-image-background">
+		        <img  src="files/image/reviev/%E2%80%98%E2%80%98.png" width="67" height="52">
+		        </div>
+		     </div>
+		   </div>
+		    <div class="reviev-item">
+		      <img class="reviev-image" src="files/image/reviev/photo.png" width="120" height="120">
+			  <div class="reviev-content-background">
+		        <div class="reviev-item-title">Ричард Ройтман</div>
+		        <div class="reviev-text">Excepteur sint occaecat cupidatat non proident, sunt insides culpa qui officia deserunt mollit anim id eston laborum. Sed ut perspiciatis unde omnis iste natus error sitire voluptatem accusant doloremque laudantium, totamie rem aperiam, eaque ipsa quae. </div>
+		        <div class="reviev-image-background">
+		        <img  src="files/image/reviev/%E2%80%98%E2%80%98.png" width="67" height="52">
+		        </div>
+		     </div>
+		   </div>
+		    <div class="reviev-item">
+		      <img class="reviev-image" src="files/image/reviev/photo.png" width="120" height="120">
+			  <div class="reviev-content-background">
+		        <div class="reviev-item-title">Ричард Ройтман</div>
+		        <div class="reviev-text">Excepteur sint occaecat cupidatat non proident, sunt insides culpa qui officia deserunt mollit anim id eston laborum. Sed ut perspiciatis unde omnis iste natus error sitire voluptatem accusant doloremque laudantium, totamie rem aperiam, eaque ipsa quae. </div>
+		        <div class="reviev-image-background">
+		        <img  src="files/image/reviev/%E2%80%98%E2%80%98.png" width="67" height="52">
+		        </div>
+		     </div>
+		   </div>
+		    <div class="reviev-item">
+		      <img class="reviev-image" src="files/image/reviev/photo.png" width="120" height="120">
+			  <div class="reviev-content-background">
+		        <div class="reviev-item-title">Ричард Ройтман</div>
+		        <div class="reviev-text">Excepteur sint occaecat cupidatat non proident, sunt insides culpa qui officia deserunt mollit anim id eston laborum. Sed ut perspiciatis unde omnis iste natus error sitire voluptatem accusant doloremque laudantium, totamie rem aperiam, eaque ipsa quae. </div>
+		        <div class="reviev-image-background">
+		        <img  src="files/image/reviev/%E2%80%98%E2%80%98.png" width="67" height="52">
+		        </div>
+		     </div>
+		   </div>
+		    <div class="reviev-item">
+		      <img class="reviev-image" src="files/image/reviev/photo.png" width="120" height="120">
+			  <div class="reviev-content-background">
+		        <div class="reviev-item-title">Ричард Ройтман</div>
+		        <div class="reviev-text">Excepteur sint occaecat cupidatat non proident, sunt insides culpa qui officia deserunt mollit anim id eston laborum. Sed ut perspiciatis unde omnis iste natus error sitire voluptatem accusant doloremque laudantium, totamie rem aperiam, eaque ipsa quae. </div>
+		        <div class="reviev-image-background">
+		        <img  src="files/image/reviev/%E2%80%98%E2%80%98.png" width="67" height="52">
+		        </div>
+		     </div>
+		   </div>
+	     </div><!--reviev-content-->
+	  </div><!--container--> 
+	</div><!--reviev-->
+    <div class="contact">
+	  <img class="contact-image" src="files/image/map/background.png">
+	    <div class="container">
+	    <div class="contact-title">Контакты</div>
+	    <div class="contact-map">м. Київ, вул. Сверстюка 19, 10 поверх, офіс 13
+	    </div>
+		<a class="contact-marker" href="https://goo.gl/maps/N6fm4ZS4eJRYqNa29" target="_blank"></a>
+		<div class="contact-inform-content">
+		  <div class="inform-title">Наши контакты</div>
+		  <a class="inform-phone" href="tel:+380679009922" >+38 (067) 900-99-22</a>
+		  <div class="inform-adress">
+		    <a href="https://goo.gl/maps/N6fm4ZS4eJRYqNa29" target="_blank" >м. Київ, вул. Сверстюка 19, 10 поверх, офіс 13</a>
+		  </div>
+		   <div class="info-social">
+		     <a class="social-faceboock" href="https://www.facebook.com/" target="_blank"></a>
+		     <a class="social-instagram"  href="https://www.instagram.com/" target="_blank"></a>
+             <a class="social-youtube"  href="https://www.youtube.com/" target="_blank"></a>
+             <a class="social-telegram" href="https://web.telegram.org/" target="_blank"></a>
+		   </div>
+		</div>
+		<div class="contact-bottom">
+	       <div class="contact-form-content">
+             <div class="contact-title-form">Закажите  обратный  звонок</div>
+			 <div class="contact-text-form">Начните работу с нами и уже через 30-40 дней получите ваше авто</div>
+             <form action="#" method="post" class="contact-form">
+	           <div class="user_phone">
+  		         <input type="text" placeholder="+38 (0__) ___ __ __" id="phone" class="contact-phone" title="Формат: +38 (096) 999 99 99"/>
+		         <input type="submit" class="contact-btn_submit" value="Заказать" />
+	           </div>
+             </form>
+          </div> 
+		</div>
+	  </div><!--container-->
+	</div><!--contact-->
+    <script src="jquery/jquery-3.5.1.min.js"></script>
+    <script src="jquery/jquery.maskedinput.js"></script>
+    <script type="text/javascript" src="jquery/slick-1.8.1/slick/slick.js"></script>
+    <script src="jquery/apps.js"></script>
+  </body>
+</html>
