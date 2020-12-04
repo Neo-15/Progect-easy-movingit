@@ -385,14 +385,13 @@ body{
 }
 
 
-.menu-phone::before{
-	content: "";
+.menu-phone-item{
 	display: block;
 	width: 13.5px;
 	height: 13.5px;
 	position: absolute;
-	top: 3px;
-	left: -25px;
+	top: 10px;
+	right: 400px;
 	background: url("../image/header/Icon%20phone.png");
 	background-repeat: no-repeat;
 	background-position: center;
@@ -420,6 +419,84 @@ body{
 
 .phone-button:hover{
 	box-shadow: 0 0 10px 7px rgb(51%, 51%, 96%, 0.5);  
+}
+
+.nav-border{
+	position: absolute;
+	border: 2px solid rgba(129, 129, 246, 0.5);
+	display: block;
+	padding: 20px;
+	width: 44px;
+	height: 44px;
+	top: 15px;
+	right: 35px;
+}
+
+.nav-togle{
+	width: 100%; 
+	height: 100%;
+	position: absolute;
+	padding: 0 4px;
+	z-index: 100;
+	display: none;
+	border: 0;
+	background:none;
+	top: 0;
+	right: 0;
+}
+
+.nav-togle:focus{
+	outline: none;
+}
+
+
+
+.nav-togle-item-top{
+	top: 10px;
+	display: block;
+	width: 22px;
+	height: 3px;
+	background-color: rgba(129, 129, 246, 0.5);
+	position: absolute;
+	left: 25%;
+	z-index: 1;
+}
+
+.nav-togle-item-center{
+	top: 18px;
+	display: block;
+	width: 22px;
+	height: 3px;
+	background-color: rgba(129, 129, 246, 0.5);
+	position: absolute;
+	left: 25%;
+	z-index: 1;
+}
+
+.nav-togle-item-bottom{
+	top: 26px;
+	display: block;
+	width: 22px;
+	height: 3px;
+	background-color: rgba(129, 129, 246, 0.5);
+	position: absolute;
+	left: 25%;
+	z-index: 1;
+}
+
+
+.nav-togle-item{
+	display: block;
+	width: 100%;
+	height: 3px;
+	background-color: rgba(129, 129, 246, 0.5);
+	position: absolute;
+	top: 9px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	z-index: 1;
 }
 
 /*intro*/
@@ -460,6 +537,7 @@ body{
 
 .intro-text{
 	width: 50%;
+	margin-right: 50px;
 }
 
 .intro-title{
@@ -559,8 +637,8 @@ body{
 
 .Services{
     background: #F4F8FF;
-	padding-left: 100px;
-	padding-right: 100px;
+	padding-left: 30px;
+	padding-right: 30px;
 }
 
 .servise-title{
@@ -808,11 +886,11 @@ body{
 
 .info-button{
 	display: block;
-	position: absolute;
-	top: 395px;
-	left: 184px;
 	width: 24px;
 	height: 24px;
+	position: absolute;
+	top: 395px;
+	left: 50%;
 	background: url('../image/servise/info-button.png');
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -889,6 +967,7 @@ body{
 .item-button{
 	width: 90%;
 	height: 50px;
+	margin: 0 auto;
 	margin-top: 40px;
 	margin-bottom: 26px;
 	padding: 0;
@@ -1995,6 +2074,14 @@ body{
 		top: 430px;
 	}
 	
+	.servis-item{
+		width: 31%;
+	}
+	
+	.item-suptitle{
+		font-size: 17px;
+	}
+	
 	
 }
 
@@ -2013,6 +2100,10 @@ body{
 		font-size: 15px;
 		margin-right: 25px;
 	}
+	
+	.menu-phone-item{
+	right: 359px;
+}
 	
 	.phone-button{
 		width: 160px;
@@ -2036,7 +2127,12 @@ body{
 }
 	
 	.intro-image::before{
-		top: 400px;
+		top: 370px;
+		left: -70px;
+	}
+	
+	.item-suptitle{
+		font-size: 16px;
 	}
 }
 
@@ -2044,6 +2140,7 @@ body{
 @media ( max-width:1024px){
 	
 	.menu-content{
+		display: none;
 		margin-right: 50px;
 	}
 	
@@ -2053,8 +2150,19 @@ body{
 	}
 	
 	.menu-phone{
+		display: none;
 		font-size: 14px;
 		margin-right: 20px;
+	}
+	
+	.menu-phone-item{
+		top: 10px;
+		right: 257px;
+	}
+	
+	.nav-border{
+		top: -3px;
+		right: 188px;
 	}
 	
 	.phone-button{
@@ -2080,8 +2188,170 @@ body{
 		width: 250px;
 		margin-bottom: 30px;
 }
+	
+	.intro-photo{
+		min-width: 360px;
+	}
+	
+	.intro-image::before{
+		top: 235px;
+		left: -70px;
+	}
 }
 
+
+@media ( max-width:830px){
+	.intro-title{
+		width: 280px;
+		font-size: 24px;
+		line-height: 42px;
+	}
+	
+	.intro-photo{
+		min-width: 310px;
+	}
+	
+	.intro-suptitle{
+		font-size: 15px;
+	}
+	
+	.intro-button{
+		width: 210px;
+		height: 40px;
+		font-size: 14px;
+	}
+	
+	.intro-image::before {
+    top: 165px;
+    left: -40px;
+}
+}
+
+
+@media (max-width:720px){
+	.intro-title{
+		width: 256px;
+		font-size: 22px;
+		line-height: 32px;
+		height: 80px;
+	}
+	
+	.intro-photo{
+		min-width: 310px;
+	}
+	
+	.intro-suptitle{
+		width: 90%;
+		font-size: 15px;
+	}
+	
+	.intro-photo{
+		min-width: 280px;
+	}
+	
+}
+
+@media (max-width:650px){
+	.intro-title{
+		width: 254px;
+		font-size: 22px;
+		line-height: 32px;
+		height: 100px;
+	}
+	
+	.intro-suptitle{
+		width: 90%;
+		font-size: 15px;
+		line-height: 24px;
+	}
+	
+	.intro-photo{
+		min-width: 260px;
+	}
+	
+	.intro-button{
+		width: 200px;
+		height: 35px;
+		font-size: 14px;
+	}
+	
+	.intro-image::before {
+    top: 165px;
+    left: -40px;
+	}
+}
+
+@media (max-width:560px){
+	
+	.intro{
+		padding: 10px;
+		margin: 0 auto;
+	}
+	
+	.intro-content{
+		flex-direction: column-reverse;
+	}
+	
+	.intro-image::before{
+		max-width: 300px;
+		width: 100%;
+	}
+	
+	.intro-photo{
+		margin: 0;
+		width: 100%;
+	}
+	
+	.intro-text{
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		width: 100%;
+		margin: 0;
+	}
+	
+	.intro-title{
+		text-align: center;
+		font-size: 26px;
+		width: 300px;
+		height: 97px;
+	}
+	
+	.intro-suptitle{
+		text-align: center;
+		width: 90%;
+	}
+	
+	.intro-image::before{
+		max-width: 100px;
+		height: 100px;
+	}
+	
+	@media (max-width:440px){
+		.head{
+		 flex-wrap: wrap;
+		 padding-left: 10px;
+		 padding-right: 10px; 
+		}
+		
+		.intro-content{
+			width: 320px;
+		}
+		
+		.phone-button{
+			display: none;
+		}
+		
+		.nav-border{
+			right: 35px;
+		}
+		
+		.menu-phone-item{
+			right: 100px;
+			width: 25px;
+			height: 25px;
+		}
+}
 
 
 
