@@ -1,0 +1,149 @@
+[Nov 9 06:22:41] 
+[Nov 9 06:22:41] ==DUPLICATOR INSTALLER BOOTSTRAP v1.3.24==
+[Nov 9 06:22:41] ----------------------------------------------------
+[Nov 9 06:22:41] Installer bootstrap start
+[Nov 9 06:22:41] Using archive /home/gpsoft/globalpartnersoft.com/d8/20191126_wordpress_1acbcfbf9398b26f3687_20200803080334_archive.zip
+[Nov 9 06:22:41] Ready to extract the installer
+[Nov 9 06:22:41] Checking permission of destination folder
+[Nov 9 06:22:41] ZipArchive exists so using that
+[Nov 9 06:22:41] Successfully opened /home/gpsoft/globalpartnersoft.com/d8/20191126_wordpress_1acbcfbf9398b26f3687_20200803080334_archive.zip
+[Nov 9 06:22:41] Extracting all files from archive within dup-installer
+[Nov 9 06:22:41] Success: dup-installer/dup-database__1acbcfb-03080334.sql >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/dup-scan__1acbcfb-03080334.json >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/assets/font-awesome/css/all.min.css >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/assets/font-awesome/css/index.php >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/assets/font-awesome/index.php >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/assets/font-awesome/webfonts/fa-brands-400.eot >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/assets/font-awesome/webfonts/fa-brands-400.ttf >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/assets/font-awesome/webfonts/fa-brands-400.woff >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/assets/font-awesome/webfonts/fa-brands-400.woff2 >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/assets/font-awesome/webfonts/fa-regular-400.eot >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/assets/font-awesome/webfonts/fa-regular-400.ttf >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/assets/font-awesome/webfonts/fa-regular-400.woff >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/assets/font-awesome/webfonts/fa-regular-400.woff2 >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/assets/font-awesome/webfonts/fa-solid-900.eot >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/assets/font-awesome/webfonts/fa-solid-900.ttf >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/assets/font-awesome/webfonts/fa-solid-900.woff >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/assets/font-awesome/webfonts/fa-solid-900.woff2 >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/assets/font-awesome/webfonts/index.php >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/assets/images/index.php >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/assets/images/ui-bg_glass_55_fbf9ee_1x400.png >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/assets/images/ui-bg_glass_65_ffffff_1x400.png >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/assets/images/ui-bg_glass_75_dadada_1x400.png >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/assets/images/ui-bg_glass_75_e6e6e6_1x400.png >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/assets/images/ui-bg_glass_95_fef1ec_1x400.png >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/assets/images/ui-bg_highlight-soft_75_cccccc_1x100.png >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/assets/images/ui-icons_222222_256x240.png >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/assets/images/ui-icons_2e83ff_256x240.png >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/assets/images/ui-icons_454545_256x240.png >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/assets/images/ui-icons_888888_256x240.png >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/assets/images/ui-icons_cd0a0a_256x240.png >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/assets/inc.css.php >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/assets/inc.js.php >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/assets/inc.libs.css.php >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/assets/inc.libs.js.php >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/assets/index.php >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/classes/class.crypt.php >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/classes/class.csrf.php >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/classes/class.db.php >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/classes/class.engine.php >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/classes/class.http.php >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/classes/class.installer.state.php >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/classes/class.logging.php >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/classes/class.package.php >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/classes/class.password.php >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/classes/class.s3.func.php >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/classes/class.server.php >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/classes/class.view.php >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/classes/config/class.archive.config.php >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/classes/config/class.boot.php >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/classes/config/class.conf.srv.php >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/classes/config/class.constants.php >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/classes/config/index.php >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/classes/Crypt/Base.php >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/classes/Crypt/index.php >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/classes/Crypt/Random.php >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/classes/Crypt/Rijndael.php >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/classes/index.php >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/classes/utilities/class.u.exceptions.php >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/classes/utilities/class.u.html.php >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/classes/utilities/class.u.notices.manager.php >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/classes/utilities/class.u.php >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/classes/utilities/class.u.search.reaplce.manager.php >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/classes/utilities/index.php >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/ctrls/ctrl.base.php >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/ctrls/ctrl.s1.php >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/ctrls/ctrl.s2.base.php >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/ctrls/ctrl.s2.dbinstall.php >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/ctrls/ctrl.s2.dbtest.php >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/ctrls/ctrl.s3.php >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/ctrls/index.php >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/favicon/browserconfig.xml >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/favicon/lite01_android-chrome-192x192.png >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/favicon/lite01_android-chrome-256x256.png >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/favicon/lite01_apple-touch-icon.png >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/favicon/lite01_favicon-16x16.png >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/favicon/lite01_favicon-32x32.png >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/favicon/lite01_favicon.ico >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/favicon/lite01_mstile-150x150.png >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/favicon/lite01_safari-pinned-tab.svg >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/favicon/site.webmanifest >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/index.php >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/main.installer.php >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/views/index.php >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/views/view.exception.php >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/views/view.help.php >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/views/view.init1.php >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/views/view.s1.base.php >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/views/view.s1.terms.php >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/views/view.s2.base.php >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/views/view.s2.basic.php >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/views/view.s2.cpnl.lite.php >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/views/view.s2.dbtest.php >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/views/view.s3.php >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/views/view.s4.php >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/dup-archive__1acbcfb-03080334.txt >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/lib/snaplib/class.snaplib.exceptions.php >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/lib/snaplib/class.snaplib.jsonSerializable.abstract.php >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/lib/snaplib/class.snaplib.logger.php >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/lib/snaplib/class.snaplib.u.io.php >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/lib/snaplib/class.snaplib.u.json.php >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/lib/snaplib/class.snaplib.u.net.php >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/lib/snaplib/class.snaplib.u.os.php >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/lib/snaplib/class.snaplib.u.stream.php >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/lib/snaplib/class.snaplib.u.string.php >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/lib/snaplib/class.snaplib.u.ui.php >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/lib/snaplib/class.snaplib.u.url.php >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/lib/snaplib/class.snaplib.u.util.php >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/lib/snaplib/class.snaplib.u.wp.php >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/lib/snaplib/index.php >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/lib/snaplib/snaplib.all.php >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/lib/snaplib/wordpress.core.files.php >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/lib/config/class.wp.config.tranformer.php >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Success: dup-installer/lib/config/class.wp.config.tranformer.src.php >>> /home/gpsoft/globalpartnersoft.com/d8
+[Nov 9 06:22:41] Successfully closed archive file
+[Nov 9 06:22:41] Successfully extracted with ZipArchive
+[Nov 9 06:22:41] SAPI: litespeed
+[Nov 9 06:22:41] creating /home/gpsoft/globalpartnersoft.com/d8/dup-installer/.user.ini with the content:
+[Nov 9 06:22:41] max_execution_time = 3600
+max_input_time = -1
+ignore_user_abort = On
+post_max_size = 4096M
+upload_max_filesize = 4096M
+memory_limit = 4294967296
+default_socket_timeout = 3600
+pcre.backtrack_limit = 99999999999
+[Nov 9 06:22:41] Set permissions of /home/gpsoft/globalpartnersoft.com/d8/dup-installer to 0<br/>
+[Nov 9 06:22:41] Set permissions of /home/gpsoft/globalpartnersoft.com/d8/dup-installer/assets to 0<br/>
+[Nov 9 06:22:41] Set permissions of /home/gpsoft/globalpartnersoft.com/d8/dup-installer/classes to 0<br/>
+[Nov 9 06:22:41] Set permissions of /home/gpsoft/globalpartnersoft.com/d8/dup-installer/ctrls to 0<br/>
+[Nov 9 06:22:41] Set permissions of /home/gpsoft/globalpartnersoft.com/d8/dup-installer/favicon to 0<br/>
+[Nov 9 06:22:41] Set permissions of /home/gpsoft/globalpartnersoft.com/d8/dup-installer/lib to 0<br/>
+[Nov 9 06:22:41] Set permissions of /home/gpsoft/globalpartnersoft.com/d8/dup-installer/views to 0<br/>
+[Nov 9 06:22:41] Set permissions of /home/gpsoft/globalpartnersoft.com/d8/dup-installer/.user.ini to 0<br/>
+[Nov 9 06:22:41] Set permissions of /home/gpsoft/globalpartnersoft.com/d8/dup-installer/dup-archive__1acbcfb-03080334.txt to 0<br/>
+[Nov 9 06:22:41] Set permissions of /home/gpsoft/globalpartnersoft.com/d8/dup-installer/dup-database__1acbcfb-03080334.sql to 0<br/>
+[Nov 9 06:22:41] Set permissions of /home/gpsoft/globalpartnersoft.com/d8/dup-installer/dup-scan__1acbcfb-03080334.json to 0<br/>
+[Nov 9 06:22:41] Set permissions of /home/gpsoft/globalpartnersoft.com/d8/dup-installer/index.php to 0<br/>
+[Nov 9 06:22:41] Set permissions of /home/gpsoft/globalpartnersoft.com/d8/dup-installer/main.installer.php to 0<br/>
+[Nov 9 06:22:41] DONE: No detected errors so redirecting to the main installer. Main Installer URI = http://d8.globalpartnersoft.com/dup-installer/main.installer.php
