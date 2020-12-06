@@ -317,8 +317,8 @@ body{
 .head{
 	display: flex;
 	justify-content: space-between;
-	padding-left: 30px;
-	padding-right: 30px;
+	padding-left: 20px;
+	padding-right: 20px;
 	position: relative;
 	max-width: 1440px;
 	width: 100%;
@@ -503,8 +503,8 @@ body{
 
 .intro{
 	position: relative;
-	padding-left: 100px;
-	padding-right: 100px;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 .intro-dots{
@@ -637,8 +637,8 @@ body{
 
 .Services{
     background: #F4F8FF;
-	padding-left: 30px;
-	padding-right: 30px;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 .servise-title{
@@ -912,8 +912,8 @@ body{
 /*advantages*/
 
 .advantages{
-	padding-left: 100px;
-	padding-right: 100px;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 .advantages-title{
@@ -932,13 +932,14 @@ body{
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
-	width: 100%;
+	width: 105%;
 }
 
 .advantages-item{
 	display: flex;
-	width: 24.7%;
-	margin-left: 88px;
+	width: 306px;
+	margin-left: 42px;
+	margin-right: 42px;
 	margin-bottom: 52px;
 	position: relative;
 }
@@ -957,20 +958,6 @@ body{
 	background-position: center;
 	background-size: cover;	
 }
-
-.advantages-item:nth-of-type(1),
-.advantages-item:nth-of-type(4),
-.advantages-item:nth-of-type(7){
-	margin-left: 0;
-}
-
-.advantages-item:nth-of-type(7),
-.advantages-item:nth-of-type(8),
-.advantages-item:nth-of-type(9){
-	margin-bottom: 92px;
-}
-
-
 
 .advantages-item:nth-of-type(4) .advantages-item-text,
 .advantages-item:nth-of-type(5) .advantages-item-text,
@@ -1010,14 +997,14 @@ body{
 /*how-we-work*/
 
 .how-we-work{
-	padding-left: 100px;
-	padding-right: 100px;
+	padding-left: 20px;
+	padding-right: 20px;
 	background: #F4F8FF;
 }
 
 .work-title{
 	padding-top: 80px;
-	margin-bottom: 56px;
+	margin-bottom: 16px;
 	font-family: 'Gilroy';
 	font-style: normal;
 	font-weight: 600;
@@ -1032,12 +1019,21 @@ body{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 96%;
+	flex-wrap: wrap;
+	width: 100%;
 	margin: 0 auto;
 	padding-bottom: 60px;
 }
 
+.work-container2{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 483px;
+}
+
 .work-arrow{
+	display: block;
 	max-width: 40px;
 	width: 100%;
 	height: 40px;
@@ -1047,8 +1043,8 @@ body{
 }
 
 .work-item{
-	width: 15.95%;
-	height: 259px;
+	width: 197px;
+	margin-top: 40px;
 }
 
 .work-item-nummer{
@@ -1085,6 +1081,7 @@ body{
 
 
 .work-item-text{
+	height: 48px;
 	font-family: 'Manrope';
 	font-style: normal;
 	font-weight: 200;
@@ -1096,10 +1093,10 @@ body{
 /*achivments*/
 
 .Achievements{
-	padding-left: 100px;
-	padding-right: 100px;
+	padding-left: 20px;
+	padding-right: 20px;
 	position: relative;
-	height: 600px;
+	padding-bottom: 100px;
 }
 
 .achievements-title{
@@ -1119,6 +1116,11 @@ body{
 	justify-content: space-between;
 }
 
+.photo-content{
+	width: 100%;
+	height: 380px;
+}
+
 .achievement-text-content{
 	display: flex;
 	justify-content: space-between;
@@ -1132,7 +1134,6 @@ body{
 
 .text-item{
 	width: 212px;
-	height: 123px;
 }
 
 .text-item-title{
@@ -1162,7 +1163,7 @@ body{
 }
 
 .text-achievemenst{
-	width: 44%;
+	width: 90%;
 	margin-top: 16px;
 	margin-left: 44px;
 	font-family: 'Gilroy';
@@ -1174,15 +1175,13 @@ body{
 	color: #000000;
 }
 
-.text-item:nth-of-type(2) .text-achievemenst,
-.text-item:nth-of-type(3) .text-achievemenst,
-.text-item:nth-of-type(4) .text-achievemenst{
-	width: 90%;
+
+.text-item:nth-of-type(1) .text-achievemenst{
+	width: 44%;
 }
 
 .achievements-photo{
 	width: 50%;
-	height: 400px;
 	position: relative;
 	margin-right: 30px;
 }
@@ -1190,17 +1189,15 @@ body{
 .achievements-background{
 	max-width: 516px;
 	width: 100%;
-	height: 296.5px;
 	position: absolute;
 	top: 4px;
 	left: -78px;
-	
 }
+
 
 .achievements-image{
 	max-width: 474px;
 	width: 100%;
-	height: 350px;
 	position: absolute;
 	top: 60px;
 	left: 70px;
@@ -1209,8 +1206,8 @@ body{
 /*prise*/
 
 .prise{
-	padding-left: 30px;
-	padding-right: 30px;
+	padding-left: 20px;
+	padding-right: 20px;
 	background: #F4F8FF;
 }
 
@@ -1464,12 +1461,13 @@ body{
 	border-top: 3px solid #8181F6;
 	border-radius: 4px;
 	background: #FFFFFF;
+	padding: 26px 24px;
 }
 
 
 .prise-item-title{
 	width: 100%;
-	margin-top: 48px;
+	margin-top: 24px;
 	margin-bottom: 24px;
 	font-family: 'Gilroy';
 	font-style: normal;
@@ -1527,57 +1525,14 @@ body{
 	color: #6B6B6B;
 }
 
-.prise-input{
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
+.prise-item-content{
+	width: 100%;
 }
 
-.priselist {
-    position: absolute;
-    z-index: -1;
-    opacity: 0;
-}
-
-.priselist + label {
-	margin-left: 54px;
-	margin-bottom: 20px;
-    position: relative;
-    vertical-align: middle;
-    padding: 0 0 0 30px;
-    cursor: pointer;
-}
-
-.priselist + label:before {
-    content: '';
-    position: absolute;
-    top: -1px;
-    left: 0;
-    width: 16px;
-    height: 16px;
-	border-radius: 50%;
-    background: #8181F6;
-	opacity: 0.2;
-}
-
-.priselist + label:after {
-    content: '';
-    position: absolute;
-}
-
-.priselist:checked + label:after {
-	height: 7px;
-	width: 7.9px;
-    position: absolute;
-    top: 4px;
-    left: 4.2px;
-  	background: url("../image/prise/Vector%20(1).png");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-}
-
-.priselist-label{
+.prise-inform{
+	position: relative;
+	margin-left: 52px;
+	margin-bottom: 16px;
 	font-family: 'Gilroy';
 	font-style: normal;
 	font-weight: normal;
@@ -1586,12 +1541,27 @@ body{
 	color: #000000;
 }
 
+.prise-inform::before{
+	content: "";
+	display: block;
+	position: absolute;
+	left: -30px;
+	top: 5px;
+	width: 16px;
+	height: 16px;
+	background: url("../image/prise/Vector%20(3).png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+
+
 .prise-submit{
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	margin-top: auto;
-	padding-bottom: 26px;
 	background-color: #fff;
 	border-radius: 4px;
 }
@@ -1622,8 +1592,8 @@ body{
 /*calculator-info*/
 
 .calculator-info{
-	padding-left: 100px;
-	padding-right: 100px;
+	padding-left: 20px;
+	padding-right: 20px;
 	background: #002262;
 	padding-bottom: 82px;
 }
@@ -1812,8 +1782,8 @@ body{
 /*easy-footer*/
 
 .easy-footer{
-	padding-left: 100px;
-	padding-right: 100px;
+	padding-left: 20px;
+	padding-right: 20px;
 	background: #F4F8FF;
 }
 
@@ -2013,6 +1983,11 @@ body{
 		font-size: 17px;
 	}
 	
+	.work-arrow{
+		margin-left: 20px;
+		margin-right: 46px;
+	}
+	
 	
 }
 
@@ -2070,6 +2045,56 @@ body{
 	.item-suptitle{
 		font-size: 16px;
 	}
+	
+	.advantages-item{
+		width: 297px;
+		margin-left: 20px;
+		margin-right: 21px;
+	}
+	
+	.work-item-nummer{
+		font-size: 140px;
+	}
+	
+	.work-item-text{
+		font-size: 14px;
+	}
+	
+	.work-arrow{
+		margin-left: 10px;
+		margin-right: 36px;
+	}
+	
+	
+}
+
+@media ( max-width:1106px){
+	
+	.work-container2{
+		width: 737px;
+	}
+	
+	.work-item-nummer{
+		font-size: 150px;
+	}
+	
+	.work-item-text{
+		font-size: 16px;
+	}
+	
+	.work-arrow{
+		margin-left: 40px;
+		margin-right: 120px;
+	}
+	
+	.work-item{
+		width: 270px;
+	}
+	
+	.work-arrow:nth-of-type(2){
+		display: none;
+	}
+	
 }
 
 
@@ -2143,6 +2168,11 @@ body{
 		top: -4px;
     	right: -35px;
 	}
+	
+	.text-item{
+		width: 205px;
+	}
+	
 }
 
 
@@ -2167,6 +2197,36 @@ body{
 	width: 100%;
 	top: -88px;
 	right: -38px;
+	}
+		
+	.achievements-content{
+		flex-wrap: wrap;
+	}
+	
+	.achievements-image{
+		top: 60px;
+		left: 255px;
+		min-width: 380px;
+	}
+	
+	.achievements-background{
+		top: 4px;
+		left: 107px;
+		min-width: 380px;
+	}
+	
+	.achievement-text-content{
+		width: 100%;
+		justify-content: center;
+	}
+	
+	.text-item{
+		margin-left: 50px;
+		margin-right: 50px;
+	}
+	
+	.photo-content{
+		height: 360px;
 	}
 }
 	
@@ -2197,8 +2257,50 @@ body{
 	.intro-photo{
 		min-width: 320px;
 	}
+	
+	.text-item{
+		margin-left: 30px;
+		margin-right: 30px;
+	}
+	
+	.photo-content{
+		height: 360px;
+	}
+	
+	.text-item-title{
+		font-size: 30px;
+	}
+	
+	.text-achievemenst{
+		font-size: 15px;
+	}
+	
+	.text-item-title::after{
+		height: 110px;
+    	top: -13px;
+	}
+	
+	.achievement-text-content{
+		margin-top: 30px;
+	}
 }
 
+
+@media (max-width:797px){
+	
+	.work-arrow{
+		margin-right: 80px;
+	}
+	
+	.work-item{
+		width: 200px;
+	}
+	
+	.work-container2{
+		width: 558px;
+	}
+	
+}
 
 @media (max-width:720px){
 	.intro-title{
@@ -2224,6 +2326,52 @@ body{
 	
 	.intro-photo{
 		min-width: 270px;
+	}
+	
+	.advantages-item{
+		margin-left: 10px;
+		margin-right: 10px;
+		width: 298px;
+	}
+	
+	.text-item{
+		width: 180px;
+	}
+	
+	.achievements-image{
+		top: 60px;
+		left: 255px;
+		min-width: 340px;
+	}
+	
+	.achievements-background{
+		top: 4px;
+		left: 107px;
+		min-width: 340px;
+	}
+	
+	.achievement-text-content{
+		margin-top: 10px;
+	}
+	
+	.photo-content {
+    height: 330px;
+}
+	
+	.text-achievemenst{
+		width: 90%;
+	}
+	
+	.prise-title{
+		padding-top: 30px;
+		font-size: 30px;
+	}
+	
+	.prise-suptitle{
+		width: 100%;
+		font-size: 19px;
+		line-height: 30px;
+		margin-bottom: 30px;
 	}
 	
 	
@@ -2256,6 +2404,82 @@ body{
 	
 	.intro-photo{
 		min-width: 240px;
+	}
+	
+	.work-arrow{
+		margin-right: 66px;
+	}
+	
+	.work-item{
+		width: 151px;
+	}
+	
+	.work-container2{
+		width: 470px;
+	}
+	
+	.achievements-image{
+		top: 60px;
+		left: 255px;
+		min-width: 340px;
+	}
+	
+	.achievements-background{
+		top: 4px;
+		left: 107px;
+		min-width: 340px;
+	}
+	
+	.achievement-text-content{
+		margin-top: 10px;
+	}
+	
+	.photo-content {
+    height: 310px;
+}
+
+	.text-item {
+    width: 130px;
+}
+	
+	.achievements-image{
+		top: 60px;
+		left: 255px;
+		min-width: 280px;
+	}
+	
+	.achievements-background{
+		top: 4px;
+		left: 107px;
+		min-width: 280px;
+	}
+	
+	.achievement-text-content{
+		margin-top: 10px;
+	}
+	
+	.photo-content {
+    height: 280px;
+}
+	
+	.text-achievemenst{
+		width: 100%;
+		font-size: 14px;
+		margin-left: 34px;
+	}
+	
+	.text-item:nth-of-type(1) .text-achievemenst {
+    width: 80%;
+}
+	
+	.achievements-title{
+		font-size: 30px;
+		margin-top: 30px;
+		margin-bottom: 20px;
+	}
+	
+	.Achievements{
+		padding-bottom: 30px;
 	}
 	
 }
@@ -2332,6 +2556,75 @@ body{
     	right: -10px;
 	}
 	
+	.advantages-title{
+		font-size: 30px;
+	}
+	
+	.work-arrow{
+		margin-right: 36px;
+		margin-left: 20px;
+	}
+	
+	.work-item{
+		width: 145px;
+	}
+	
+	.achievements-image{
+		top: 60px;
+		left: 255px;
+		min-width: 340px;
+	}
+	
+	.achievements-background{
+		top: 4px;
+		left: 107px;
+		min-width: 340px;
+	}
+	
+	.achievement-text-content{
+		margin-top: 10px;
+	}
+	
+	.photo-content {
+    height: 235px;
+}
+
+	.text-item {
+    width: 110px;
+}
+	
+	.achievements-image{
+		top: 45px;
+		left: 166px;
+		min-width: 210px;
+	}
+	
+	.achievements-background{
+		top: 4px;
+		left: 107px;
+		min-width: 210px;
+	}
+	
+	.achievement-text-content{
+		margin-top: 10px;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	
+	.photo-content {
+    height: 235px;
+}
+	
+	.text-achievemenst{
+		width: 100%;
+		font-size: 14px;
+		margin-left: 34px;
+	}
+	
+	
+}
+	
+	
 	@media (max-width:441px){
 		.head{
 		 flex-wrap: wrap;
@@ -2398,6 +2691,106 @@ body{
 			width: 19px;
 			height: 19px;
 		}
+		
+		.work-title{
+		font-size:  30px;
+	}
+	
+	.work-arrow{
+		display: none;
+	}
+	
+	.work-item{
+		width: 253px;
+		text-align: center;
+	}
+	
+	.work-item-nummer{
+		justify-content: center;
+	}
+	
+	.work-item-title::after{
+		margin: 16px auto;
+	}
+	
+	.work-container2{
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+		
+		.achievements-image{
+		top: 60px;
+		left: 255px;
+		min-width: 340px;
+	}
+	
+	.achievements-background{
+		top: 4px;
+		left: 107px;
+		min-width: 340px;
+	}
+	
+	.achievement-text-content{
+		margin-top: 10px;
+	}
+	
+	.photo-content {
+    height: 235px;
+}
+
+	.text-item {
+    width: 90px;
+	margin-left: 32px;
+	margin-right: 30px;
+}
+	
+	.achievements-image{
+		top: 45px;
+		left: 70px;
+		min-width: 210px;
+	}
+	
+	.achievements-background{
+		top: 4px;
+		left: 25px;
+		min-width: 210px;
+	}
+	
+	.achievement-text-content{
+		width: 100%;
+		margin-top: 10px;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	
+	.photo-content {
+    height: 235px;
+}
+	
+	.text-achievemenst{
+		width: 100%;
+		font-size: 12px;
+		margin-left: 18px;
+	}
+		
+		.text-item-title{
+			margin-left: 18px;
+		}
+		
+		.text-item:nth-of-type(1) .text-achievemenst {
+    width: 122%;
+}
+		
+		.Achievements{
+			padding-left: 0;
+			padding-right: 0;
+			padding-bottom: 50px;
+		}
+		
+		.prise-item{
+		width: 275px;
+	}
+		
 }
 
 
