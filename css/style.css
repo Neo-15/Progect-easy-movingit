@@ -1613,7 +1613,6 @@ body{
 .calculator-content{
 	display: flex;
 	justify-content: space-between;
-	flex-wrap: wrap;
 	width: 84%;
 	margin:0 auto;
 }
@@ -1802,7 +1801,8 @@ body{
 
 .footer-menu{
 	display: flex;
-	justify-content: space-between;
+	flex-direction: column;
+	justify-content: center;
 	flex-wrap: wrap;
 	width: 110px;
 }
@@ -1847,10 +1847,10 @@ body{
 
 .footer-contacts{
 	display: flex;
-	justify-content: space-between;
+	flex-direction: column;
+	justify-content: center;
 	flex-wrap: wrap;
-	width: 16%;
-	height: 153px;
+	width: 139px;
 }
 
 .phone-nummer{
@@ -1893,10 +1893,10 @@ body{
 
 .footer-social{
 	display: flex;
-	justify-content: space-between;
+	flex-direction: column;
+	justify-content: center;
 	flex-wrap: wrap;
-	width: 8%;
-	height: 100px;
+	width: 95px;
 }
 
 .footer-social .phone-nummer:nth-of-type(1)::before{
@@ -2229,6 +2229,23 @@ body{
 		height: 360px;
 	}
 }
+
+
+@media ( max-width:855px){
+	.calculator-content{
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	
+	.text-area{
+		margin-left: 0;
+		width: 80%;
+	}
+	
+	.calculator-contact{
+		width: 70%;
+	}
+}
 	
 	
 @media ( max-width:830px){
@@ -2283,6 +2300,44 @@ body{
 	.achievement-text-content{
 		margin-top: 30px;
 	}
+	
+	.easy-footer-content{
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	
+	.footer-logo-container{
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		margin-bottom: 30px;
+		
+	}
+	
+	.footer-logo{
+		margin-right: 0;
+	}
+	
+	.footer-info{
+		flex-wrap: wrap;
+		width: 100%;
+	}
+	
+	.footer-contacts{
+		margin-right: 30px;
+		margin-left: 30px;
+	}
+	
+	.footer-menu{
+		margin-left: 30px;
+		margin-right: 30px;
+	}
+	
+	.footer-social{
+		margin-right: 30px;
+		margin-left: 30px;
+	}
+	
 }
 
 
@@ -2482,7 +2537,35 @@ body{
 		padding-bottom: 30px;
 	}
 	
+	.footer-menu{
+		margin-left: 40px;
+		margin-right: 0;
+		margin-top: 30px;
+		width: 300px;
+	}
+	
+	.footer-contacts{
+		width: 300px;
+		margin-left: 40px;
+		margin-right: 0;
+		margin-top: 30px;
+	}
+	
+	.footer-social{
+		width: 300px;
+		margin-left: 40px;
+		margin-right: 0;
+		margin-top: 30px;
+	}
+	
+	.footer-info{
+		flex-wrap: wrap;
+		width: 100%;
+		justify-content: center;
+	}
+		
 }
+
 
 @media (max-width:560px){
 	
@@ -2619,6 +2702,32 @@ body{
 		width: 100%;
 		font-size: 14px;
 		margin-left: 34px;
+	}
+	
+	.calculator-info{
+		padding-bottom: 30px;
+	}
+	
+	.calculator-title{
+		padding-top: 30px;
+		margin-bottom: 30px;
+		font-size: 30px;
+	}
+	
+	.calculator-contact{
+		width: 100%;
+	}
+	
+	.text-area{
+		width: 100%;
+	}
+	
+	.calculator-textarea{
+		margin-top: 20px;
+	}
+	
+	.calculator-label{
+		width: 88%;
 	}
 	
 	
