@@ -502,6 +502,7 @@ body{
 /*intro*/
 
 .intro{
+	height: 100vh;
 	position: relative;
 	padding-left: 20px;
 	padding-right: 20px;
@@ -636,6 +637,7 @@ body{
 /*services*/
 
 .Services{
+	position: relative;
     background: #F4F8FF;
 	padding-left: 20px;
 	padding-right: 20px;
@@ -903,6 +905,7 @@ body{
 	color: #FFFFFF;
 	border: 0;
 	border-bottom: 2px solid #002262;
+	outline: none;
 }
 
 .item-button:hover{
@@ -932,7 +935,7 @@ body{
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
-	width: 105%;
+	width: 100%;
 }
 
 .advantages-item{
@@ -1249,10 +1252,17 @@ body{
 	width: 604px;
 	height: 562px;
 	position: absolute;
-	left: 320px;
-	top: -109px;
-	z-index: 10;
+	top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
 	background: #FFFFFF;
+	z-index: 50001;
+}
+
+.prise-item-before.active{
+	display: block;
 }
 
 .form-title{
@@ -1714,8 +1724,8 @@ body{
 	max-width: 184px;
 	width: 100%;
 	position: absolute;
-	top:-69px;
-	right: -132px;
+	top:-118px;
+	right: -62px;
 	z-index: 1;
 	background: url("../image/dots2opasity.svg");
 	background-repeat: no-repeat;
@@ -1919,6 +1929,22 @@ body{
 	background-position: center;
 	background-size: cover;
 }
+
+.zatmenie{
+		display: none;
+		background: rgba(102, 102, 102, 0.5);
+        width: 100%;
+        height: 655%;
+        position: absolute;
+        top: 0;
+        left: 0;
+		z-index: 50000;
+}
+
+.zatmenie.active{
+	display: block;
+}
+
 
 @media ( max-width:1315px){
 	.servise-title::before{
@@ -2538,7 +2564,7 @@ body{
 	}
 	
 	.footer-menu{
-		margin-left: 40px;
+		margin-left: 0px;
 		margin-right: 0;
 		margin-top: 30px;
 		width: 300px;
@@ -2562,6 +2588,10 @@ body{
 		flex-wrap: wrap;
 		width: 100%;
 		justify-content: center;
+	}
+	
+	.text-area::before{
+		display: none;
 	}
 		
 }
@@ -2636,7 +2666,7 @@ body{
 	
 	.intro-image::after{
 		top: -4px;
-    	right: -10px;
+    	right: -6px;
 	}
 	
 	.advantages-title{
@@ -2899,6 +2929,10 @@ body{
 		.prise-item{
 		width: 275px;
 	}
+		
+		.footer-menu{
+			margin-left: 25px;
+		}
 		
 }
 
