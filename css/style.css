@@ -558,7 +558,6 @@ body{
 /*intro*/
 
 .intro{
-	height: 100vh;
 	position: relative;
 	padding-left: 20px;
 	padding-right: 20px;
@@ -2896,6 +2895,10 @@ body{
 	.menu-phone{
 		margin: 0;
 		width: 0;
+	}
+	
+	.menu-item{
+		display: none;
 	}
 	
 	.menu-content{
