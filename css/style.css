@@ -502,7 +502,6 @@ body{
 /*intro*/
 
 .intro{
-	height: 100vh;
 	position: relative;
 	padding-left: 20px;
 	padding-right: 20px;
