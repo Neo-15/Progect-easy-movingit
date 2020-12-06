@@ -9,15 +9,15 @@
   </head>
   <body>
     <div class="zatmenie" id="zatmenie"></div>
-    <header class="head">
-      <img class="intro-dots" src="image/intro/dots.svg" width="184" height="193.54">
-	  <img class="head_logo" src="image/header/logo.png">
-      <div class="menu-content">
-		  <a class="menu-item" href="#">Услуги</a> 
-		  <a class="menu-item" href="#">Преимущества</a> 
-		  <a class="menu-item" href="#">Этапы работы</a> 
-		  <a class="menu-item" href="#">Цены</a> 
-		  <a class="menu-item" href="#">Контакты</a> 
+    <header class="head" id="head">
+      <img class="intro-dots" src="image/intro/dots.svg" width="184" height="193" alt="Dots">
+	  <img class="head_logo" src="image/header/logo.png" data-scroll="#intro" alt="logo">
+      <div class="menu-content" id="nav">
+		  <a class="menu-item" href="#" data-scroll="#Servises" >Услуги</a> 
+		  <a class="menu-item" href="#" data-scroll="#advantages" >Преимущества</a> 
+		  <a class="menu-item" href="#" data-scroll="#how-we-work" >Этапы работы</a> 
+		  <a class="menu-item" href="#" data-scroll="#prise" >Цены</a> 
+		  <a class="menu-item" href="#" data-scroll="#calculator" >Контакты</a> 
 	   </div>
 	   <div class="menu-phones">
 		 <a class="menu-phone-item" href="tel:+380683453517"></a>
@@ -32,7 +32,7 @@
 		 <div class="nav-togle-item-bottom"></div>
        </div>
     </header>
-	<div class="intro">	 
+	<div class="intro" id="intro">	 
 	   <div class="container">
 		<div class="intro-content">
 		  <div class="intro-text">
@@ -41,7 +41,7 @@
 			 <input type="button" class="intro-button" value="Заказать" id="intro-btn">
 		  </div>
 		  <div class="intro-image">
-		   <img class="intro-photo" src="image/intro/intro-photo.png">
+		   <img class="intro-photo" src="image/intro/intro-photo.png" alt="photo">
 		  </div>
 		</div>
 	  </div>
@@ -55,175 +55,189 @@
 			    <input type="submit" class="input-submit-form" value="Отправить">
 			  </div>
 			</form>
+		      <div class="prise-form-succesful">
+			  <div class="succesful-logo"></div>
+			  <div class="succesful-title">Готово!</div>
+			  <div class="succesful-suptitle">Уже совсем скоро наш менеджер свяжется с вами.</div>
+			  <div class="submit-form">
+			    <input type="button" class="succesful-button" value="На главную">
+				</div>
+			</div>
 	</div>
-    <div class="Services">
+    <div class="Services" id="Servises">
       <div class="container">
         <div class="servise-title">Услуги</div>
-        <div class="servis-content" id="skick-slide">
+        <div class="servis-content">
         <div class="servis-item">
-        <img class="item-image" src="image/servise/flet.png">
+        <img class="item-image" src="image/servise/flet.png" alt="flet">
         <div class="item-title">Квартирный переезд</div>
         <div class="item-suptitle"> Переезд в новую квартиру или дом может быть очень напряженным...</div>
-        <div class="item-info">
+        <div class="item-info" id="flets">
           <div class="info-title">Квартирный переезд</div>
-		  <input type="button" class="info-close">
+		  <input type="button" class="info-close" value=".">
           <div class="info-text"> Eazy Moving работает над тем, чтобы помочь вам качественно и безопастно переехать. 
 		<p>A так же помочь вам со сборкой и разборкой мебели, с упаковкой и распаковкой любых вещей.</p> И что угодно по желанию клиента. С услугой “Переезд под ключ” вы и вовсе можите отдыхать - мы всё сделаем за вас! 
 	    <p>К каждому переезду мы подходим индивидуально и ответственно.</p></div>           
 		</div>
         <div class="service-buttons">
-		  <input type="button" class="info-button">
+		  <input type="button" class="info-button" id="flet" value=".">
         </div>
 		<input type="button" class="item-button servise" value="Заказать">
         </div>
 		 <div class="servis-item">
-        <img class="item-image" src="image/servise/ofice.png">
+        <img class="item-image" src="image/servise/ofice.png" alt="office">
         <div class="item-title">Офисный переезд</div>
         <div class="item-suptitle">  В офисном переезде крайне важны многие детали...</div>
-        <div class="item-info">
+        <div class="item-info" id="offices">
           <div class="info-title">Офисный переезд</div>
-		  <input type="button" class="info-close">
-          <div class="info-text">   В офисном переезде крайне важны многие мелочи. Наш менеджер максимально точно оценит стоимость вашего переезда, расскажет нюансы и важные детали при переезде. Поможет решить поступающие по ходу вопросы и задачи. Eazy Moving огранизует переезд вашей компании максимально быстро, чтоб ваши сотрудники и не заметили переезда, а только новый вид из окна.   </div>   
+		  <input type="button" class="info-close" value=".">
+          <div class="info-text">   В офисном переезде крайне важны многие мелочи. Наш менеджер максимально точно оценит стоимость вашего переезда, расскажет нюансы и важные детали при переезде. Поможет решить поступающие по ходу вопросы и задачи. Eazy Moving огранизует переезд вашей компании максимально быстро, чтоб ваши сотрудники и не заметили переезда, а только новый вид из окна. </div>   
 		</div>
         <div class="service-buttons">
-		  <input type="button" class="info-button">
+		  <input type="button" class="info-button" id="office" value=".">
 		</div>
 		<input type="button" class="item-button servise" value="Заказать">	 
         </div>
 		 <div class="servis-item">
-        <img class="item-image" src="image/servise/comer.png">
+        <img class="item-image" src="image/servise/comer.png" alt="comersian">
         <div class="item-title">Коммерческие переезды</div>
         <div class="item-suptitle">Сотрудники Eazy Moving имеют огромный опыт такелажных работ...</div>
 		
-        <div class="item-info">
+        <div class="item-info" id="comersians">
           <div class="info-title">Комерческие и другие переезды</div>
-		  <input type="button" class="info-close">
+		  <input type="button" class="info-close" value=".">
           <div class="info-text"> За многие годы работы мы перевозили отделения банков, сейфы разного веса, банкоматы, печатные станки, бренд зоны различных торговых марок, бутики одежды, простые магазинчики, ларьки, рождественские домики. Бережно перевозим пианифо, рояль, любую тяжёлую технику  и мебель. Кроме всего вывозим строительный мусор.</div>           
 		</div>
 		<div class="service-buttons">
-		  <input type="button" class="info-button">
+		  <input type="button" class="info-button" id="comersian" value=".">
 		</div>
-		<input type="button" class="item-button servise" value="Заказать">	 
+		<input type="button" class="item-button servise" value="Заказать" >	 
         </div>
 		 <div class="servis-item">
-        <img class="item-image" src="image/servise/demon.png">
+        <img class="item-image" src="image/servise/demon.png" alt="demon">
         <div class="item-title">Сборка, разборка, демонтаж </div>
         <div class="item-suptitle"> Команда Easy Moving имеет большой опыт работы по сборке...  </div>
-        <div class="item-info">
+        <div class="item-info" id="destroys">
           <div class="info-title">Сборка, разборка, демонтаж </div>
-		  <input type="button" class="info-close">
+		  <input type="button" class="info-close" value=".">
           <div class="info-text"> У нас есть хорошие специалисты мебельщики и все необходимые инструменты. Мы не боимся мощной советской мебели и нежной современной.Также мы монтируем и демонтируем торговые точки, бренд зоны, киоски, рождественские домики и т.п... Вывозим строительный мусор и многое д ругое. </div>           
 		</div>
        <div class="service-buttons">
-		  <input type="button" class="info-button">
+		  <input type="button" class="info-button" id="destroy" value=".">
 		</div>
-		<input type="button" class="item-button servise" value="Заказать">	 
+		<input type="button" class="item-button servise" value="Заказать" >	 
         </div>
 		 <div class="servis-item">
-        <img class="item-image" src="image/servise/forukraine.png">
+        <img class="item-image" src="image/servise/forukraine.png" alt="for-ukraine">
         <div class="item-title">Перевозки по всей Украине</div>
         <div class="item-suptitle">  Если ваш переезд запланирован в другой конец страны...</div>
-        <div class="item-info">
+        <div class="item-info" id="get-ins" >
           <div class="info-title">Перевозки по всей Украине</div>
-		  <input type="button" class="info-close">
-          <div class="info-text"> Если ваш переезд запланирован в другой конец страны - это не проблема! Eazy Moving просчитает и организует найболее выгодный для вас маршрут.</div>           
+		  <input type="button" class="info-close" value=".">
+          <div class="info-text"> Если ваш переезд запланирован в другой конец страны - это не проблема! Eazy Moving просчитает и организует найболее выгодный для вас маршрут.</div>        
 		</div>
 		<div class="service-buttons">
-		  <input type="button" class="info-button">
+		  <input type="button" class="info-button" id="get-in" value=".">
 		</div>
 		<input type="button" class="item-button servise" value="Заказать">	 
         </div>
 		 <div class="servis-item">
-        <img class="item-image" src="image/servise/others.png">
+        <img class="item-image" src="image/servise/others.png" alt="others">
         <div class="item-title">Другие переезды</div>
         <div class="item-suptitle"> Сотрудники Eazy Moving имеют огромный опыт такелажных работ ... </div>
-        <div class="item-info">
+        <div class="item-info" id="others">
           <div class="info-title">Другие переезды</div>
-		  <input type="button" class="info-close">
+		  <input type="button" class="info-close" value=".">
           <div class="info-text">  Сотрудники Eazy Moving имеют огромный опыт такелажных работ разного уровня сложности. Банковские сейфы, банкоматы, пианино, фортепиано, печатные станки и многое другое - в этой работе нам нет равных :)</div>           
 		</div>
         <div class="service-buttons">
-		  <input type="button" class="info-button">
+		  <input type="button" class="info-button" id="other" value=".">
 		</div>
         <input type="button" class="item-button servise" value="Заказать">
         </div>
         </div>
       </div>
-	 <div class="zatmenie" id="zatmenie-servise">
-	  <form method="post" class="prise-item-before" name="priseform2">
+	  <form method="post" class="prise-item-before" name="priseform2" id="prise-item-servise">
 			  <div class="form-title-close"></div>
 			  <div class="form-title">Форма для заказа</div>
-			  <input type="text" name="Myname" class="input-content" id="input-names" placeholder="Имя*">
-			  <input type="tel" class="input-content" name="telephone" id="telephone-input" placeholder="Номер телефона*">
-			  <input type="email" class="input-content" name="email" id="emails" placeholder="Email*">
+			  <input type="text" name="Myname" class="input-content" id="input-names" placeholder="Имя*" value="Name">
+			  <input type="tel" class="input-content" name="telephone" id="telephone-input" placeholder="Номер телефона*" value="Nummer">
+			  <input type="email" class="input-content" name="email" id="emails" placeholder="Email*" value="Email">
 			  <div class="submit-form">
 			    <input type="submit" class="input-submit-form" value="Отправить">
 			  </div>
 			</form>
-		  </div>
-    </div>
-	<div class="advantages">
+		      <div class="prise-form-succesful">
+			  <div class="succesful-logo"></div>
+			  <div class="succesful-title">Готово!</div>
+			  <div class="succesful-suptitle">Уже совсем скоро наш менеджер свяжется с вами.</div>
+			  <div class="submit-form">
+			    <input type="button" class="succesful-button" value="На главную">
+				</div>
+			</div>
+	  </div>
+	<div class="advantages" id="advantages">
 	  <div class="container">
 		<div class="advantages-title">Наши преймущества</div>
 		  <div class="advantages-content">
 			<div class="advantages-item">
-			  <img class="advantages-item-logo" src="image/advantages/pig.png">
+			  <img class="advantages-item-logo" src="image/advantages/pig.png" alt="logo">
 			  <div>
 			    <div class="advantages-item-title">Економия</div>
 			    <div class="advantages-item-text">Помогаем MAX сохранить ваше время и бюджет</div>
 			  </div>
 		    </div>
 			<div class="advantages-item">
-			  <img class="advantages-item-logo" src="image/advantages/security.png">
+			  <img class="advantages-item-logo" src="image/advantages/security.png" alt="sekuriey">
 			  <div>
 			    <div class="advantages-item-title">Гарантия</div>
 			    <div class="advantages-item-text">безопасность ваших вещей</div>
 			  </div>
 		    </div>
 			<div class="advantages-item">
-			  <img class="advantages-item-logo" src="image/advantages/done.png">
+			  <img class="advantages-item-logo" src="image/advantages/done.png" alt="logo">
 			  <div>
 			    <div class="advantages-item-title">Ответственность</div>
 			    <div class="advantages-item-text">Ручаемся за доверенную работу</div>
 			  </div>
 		    </div>
 			<div class="advantages-item">
-			  <img class="advantages-item-logo" src="image/advantages/star.png">
+			  <img class="advantages-item-logo" src="image/advantages/star.png" alt="logo">
 			  <div>
 			    <div class="advantages-item-title">Многосложность</div>
 			    <div class="advantages-item-text">Выполняем работу любой сложности</div>
 			  </div>
 		    </div>
 			<div class="advantages-item">
-			  <img class="advantages-item-logo" src="image/advantages/map.png">
+			  <img class="advantages-item-logo" src="image/advantages/map.png" alt="map">
 			  <div>
 			    <div class="advantages-item-title">Повсеместно</div>
 			    <div class="advantages-item-text">Работаем по всей Украине</div>
 			  </div>
 		    </div>
 			<div class="advantages-item">
-			  <img class="advantages-item-logo" src="image/advantages/calcul.png">
+			  <img class="advantages-item-logo" src="image/advantages/calcul.png" alt="calculator">
 			  <div>
 			    <div class="advantages-item-title">Консультация</div>
 			    <div class="advantages-item-text">Бесплатная, грамотная консультация и просчёт</div>
 			  </div>
 		    </div>
 			<div class="advantages-item">
-			  <img class="advantages-item-logo" src="image/advantages/clean.png">
+			  <img class="advantages-item-logo" src="image/advantages/clean.png" alt="clean">
 			  <div>
 			    <div class="advantages-item-title">Чистота</div>
 			    <div class="advantages-item-text">Остявляем за собой порядок</div>
 			  </div>
 		    </div>
 			<div class="advantages-item">
-			  <img class="advantages-item-logo" src="image/advantages/phone.png">
+			  <img class="advantages-item-logo" src="image/advantages/phone.png" alt="phone">
 			  <div>
 			    <div class="advantages-item-title">Ежедневно</div>
 			    <div class="advantages-item-text">Работаем без выходных и праздников</div>
 			  </div>
 		    </div>
 			<div class="advantages-item">
-			  <img class="advantages-item-logo" src="image/advantages/kor.png">
+			  <img class="advantages-item-logo" src="image/advantages/kor.png" alt="advantages">
 			  <div>
 			    <div class="advantages-item-title">Скидки</div>
 			    <div class="advantages-item-text">Бонусы для постоянных клиентов</div>
@@ -233,7 +247,7 @@
 		    </div>
 		  </div>
 	  </div>
-	<div class="how-we-work">
+	<div class="how-we-work" id="how-we-work">
 	  <div class="container">
 		<div class="work-title">Как мы работаем</div>
 		<div class="work-content">
@@ -242,20 +256,20 @@
 			<div class="work-item-title">Заявка на услугу</div>
 			<div class="work-item-text">Выбираете тип услуги и подаёте заявку</div>
 		  </div>
-		  <img class="work-arrow" src="image/advantages/arrow.png">
+		  <img class="work-arrow" src="image/advantages/arrow.png" alt="arrow">
 		  <div class="work-item">
 			<div class="work-item-nummer">2</div>
 			<div class="work-item-title">Обратная связь</div>
 			<div class="work-item-text">Мы вам перезваниваем. Уточняем детали</div>
 		  </div>
-		  <img class="work-arrow" src="image/advantages/arrow.png">
+		  <img class="work-arrow" src="image/advantages/arrow.png" alt="arrow">
 		  <div class="work-container2">
 		  <div class="work-item">
 			<div class="work-item-nummer">3</div>
 			<div class="work-item-title">Тайминг</div>
 			<div class="work-item-text">Назначаем дату, время выполнения работы</div>
 		  </div>
-		  <img class="work-arrow" src="image/advantages/arrow.png">
+		  <img class="work-arrow" src="image/advantages/arrow.png" alt="arrow">
 		  <div class="work-item">
 			<div class="work-item-nummer">4</div>
 			<div class="work-item-title">Счастливый клиент</div>
@@ -271,8 +285,8 @@
 	    <div class="achievements-content">
 		    <div class="achievements-photo">
 			<div class="photo-content"></div>
-		    <img class="achievements-background" src="image/achivments/background.png">
-            <img class="achievements-image" src="image/achivments/photo.png"> 
+		    <img class="achievements-background" src="image/achivments/background.png" alt="achievments-background">
+            <img class="achievements-image" src="image/achivments/photo.png" alt="achiements-photo"> 
 	    </div>	
 		<div class="achievement-text-content">
 		     <div class="text-item">
@@ -295,19 +309,11 @@
 	    </div>
 	  </div>
 	  </div>
-	  <div class="prise">
+	  <div class="prise" id="prise">
 		<div class="container">
 		  <div class="prise-title">Цены</div>
 		  <div class="prise-suptitle">Для постоянных клиентов действует система скидок и приятных бонусов.</div>
 		<div class="prise-content">
-			<div class="prise-form-succesful">
-			  <div class="succesful-logo"></div>
-			  <div class="succesful-title">Готово!</div>
-			  <div class="succesful-suptitle">Уже совсем скоро наш менеджер свяжется с вами.</div>
-			  <div class="submit-form">
-			    <input type="button" class="succesful-button" value="На главную">
-				</div>
-			</div>
 		    <div class="prise-item">
 				<div class="prise-item-title">КВАРТИРНЫЕ ПЕРЕЕЗДЫ</div>
 			  <div class="text-prise">от <span>120</span> грн/час</div>
@@ -318,7 +324,7 @@
 				 <div class="prise-inform">Складские работы – грузчики, сортировщики, упаковщики.</div>
 			   </div>
 			   <div class="prise-submit">
-			     <input type="button" class="prise-button popat" value="Заказать">
+			     <input type="button" class="prise-button" value="Заказать">
 			   </div>
 		     </div>
 			  <div class="prise-item">
@@ -331,7 +337,7 @@
 				 <div class="prise-inform">Монтаж/демонтаж вывисок бренд-зоны, фурнитуры.</div>
 			   </div>
 			   <div class="prise-submit">
-			     <input type="button" class="prise-button popat" value="Заказать">
+			     <input type="button" class="prise-button" value="Заказать">
 			   </div>
 		     </div>
 			  <div class="prise-item">
@@ -343,7 +349,7 @@
 				<div class="prise-inform">Разгрузка и погрузка мебели.</div>
 				</div> 
 			   <div class="prise-submit">
-			     <input type="button" class="prise-button popat" value="Заказать">
+			     <input type="button" class="prise-button" value="Заказать">
 			   </div>
 			 </div>
 			  <div class="prise-item">
@@ -354,7 +360,7 @@
 			    <div class="prise-inform">Такелажные работы любой сложности – пианино, сейфы, печатные станки, крупная бытовая техника и всё, что тяжелее 100 кг.</div>
 				 </div> 
 			   <div class="prise-submit">
-			     <input type="button" class="prise-button popat" value="Заказать" >
+			     <input type="button" class="prise-button" value="Заказать">
 			   </div>
 			 </div>
 			  <div class="prise-item">
@@ -368,25 +374,31 @@
 				  <div class="prise-inform">Мусоровоз.</div>
 			   </div>
 			   <div class="prise-submit">
-			     <input type="button" class="prise-button popat" value="Заказать">
+			     <input type="button" class="prise-button" value="Заказать" id="prise-item">
 			   </div>
 		     </div>
 		  </div>
 		 </div>
-		<div class="zatmenie" id="zatmenie-prise">
-	  <form method="post" class="prise-item-before" name="priseform2">
+	  <form method="post" class="prise-item-after" name="priseform2" id="priseid">
 			  <div class="form-title-close"></div>
 			  <div class="form-title">Форма для заказа</div>
-			  <input type="text" name="Myname" class="input-content" id="input-names" placeholder="Имя*">
-			  <input type="tel" class="input-content" name="telephone" id="telephone-input" placeholder="Номер телефона*">
-			  <input type="email" class="input-content" name="email" id="emails" placeholder="Email*">
+			  <input type="text" name="Myname" class="input-content" id="Families" placeholder="Имя*">
+			  <input type="tel" class="input-content" name="telephone" id="telephones-nummer" placeholder="Номер телефона*">
+			  <input type="email" class="input-content" name="email" id="email-content" placeholder="Email*">
 			  <div class="submit-form">
 			    <input type="submit" class="input-submit-form" value="Отправить">
 			  </div>
 			</form>
-		  </div>
+		    <div class="prise-form-succesful">
+			  <div class="succesful-logo"></div>
+			  <div class="succesful-title">Готово!</div>
+			  <div class="succesful-suptitle">Уже совсем скоро наш менеджер свяжется с вами.</div>
+			  <div class="submit-form">
+			    <input type="button" class="succesful-button" value="На главную">
+				</div>
+			</div>
 		</div>
-	    <div class="calculator-info">
+	    <div class="calculator-info" id="calculator">
 		  <div class="container">
 			<div class="calculator-title">Желаете заказать или просчитать переезд?</div>
 			<form class="calculator-content" id="content-carculator">
@@ -396,8 +408,8 @@
 			     <input type="email" class="calculator-item" placeholder="Email*">
 			  </div>
 			  <div class="text-area">
-                <label class="calculator-label" for="From where and where?">Что будем перевозить? От куда и куда?</label>
-	            <textarea form="content-carculator" class="calculator-textarea" name="What will we transport?" id="From where and where?" ></textarea>
+                <label class="calculator-label" for="From_where_and_where?">Что будем перевозить? От куда и куда?</label>
+	            <textarea form="content-carculator" class="calculator-textarea" name="What_will_we_transport?" id="From where and where?" ></textarea>
 			    <input class="calculator-submit" type="submit" value="Отправить">
 			  </div>
 			</form>
@@ -407,22 +419,22 @@
           <div class="container">
 		    <div class="easy-footer-content">
 			<div class="footer-logo-container">
-			<img class="footer-logo" src="image/footer/%D0%9C%D0%BE%D0%BD%D1%82%D0%B0%D0%B6%D0%BD%D0%B0%D1%8F%20%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C%205%201%20(2).png">
+			<img class="footer-logo" src="image/footer/logo.png" data-scroll="#intro" alt="footer-logo">
 			</div>
 			<div class="footer-info">
 			<div class="footer-menu">
 			<div class="footer-menu-title">Меню</div>
-		    <a class="footer-item" href="#">Услуги</a>
-		    <a class="footer-item" href="#">Преимущества</a>
-		    <a class="footer-item" href="#">Этапы работы</a>
-		    <a class="footer-item" href="#">Цены</a>
-		    <a class="footer-item" href="#">Контакты</a>
+		    <a class="footer-item" href="#" data-scroll="#Servises">Услуги</a>
+		    <a class="footer-item" href="#" data-scroll="#advantages">Преимущества</a>
+		    <a class="footer-item" href="#" data-scroll="#how-we-work">Этапы работы</a>
+		    <a class="footer-item" href="#" data-scroll="#prise">Цены</a>
+		    <a class="footer-item" href="#" data-scroll="#calculator">Контакты</a>
 		  </div>
 		  <div class="footer-contacts">
 		    <div class="footer-menu-title">Контакты</div>
-			  <a class="phone-nummer" href="tel:+38 (063) 679 76 78" >+38 (063)679 76 78</a>
-			  <a class="phone-nummer" href="tel:++38 (050) 275 72 48" >+38 (050) 275 72 48</a>
-			  <a class="phone-nummer" href="tel:+38 (068) 345 35 17" >+38 (068) 345 35 17</a>
+			  <a class="phone-nummer" href="tel:+38(063)6797678" >+38 (063)679 76 78</a>
+			  <a class="phone-nummer" href="tel:++38(050)2757248" >+38 (050) 275 72 48</a>
+			  <a class="phone-nummer" href="tel:+38(068)3453517" >+38 (068) 345 35 17</a>
 			  <a class="phone-nummer" href="https://eazymoving.ua@gmail.com"  target="_blank">eazymoving.ua@gmail.com</a>
 		  </div>
 		  <div class="footer-social">
