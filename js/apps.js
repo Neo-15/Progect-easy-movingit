@@ -78,7 +78,7 @@ $('.nav-border').click(function() {
 	$('.nav-togle-item-top').toggleClass('active');
 	$('.nav-togle-item-center').toggleClass('active');
 	$('.nav-togle-item-bottom').toggleClass('active');
-	$('.menu-item').toggleClass('active');
+	$('.menu-item').addClass('active');
  });
 
 $('.menu-item, .phone-button').click(function() {
