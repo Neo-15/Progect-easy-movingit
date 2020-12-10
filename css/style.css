@@ -5,6 +5,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 @font-face {
     font-family: 'Manrope';
     src: url('../font/Manrope-Bold.eot');
@@ -341,8 +348,12 @@ body{
 }
 
 .head--fixed{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	max-width: 1920px;
 	width: 100%;
 	height: 70px;
@@ -401,7 +412,9 @@ body{
 		        flex-direction: column;
 		-webkit-box-pack: center;
 		    -ms-flex-pack: center;
-				align-items: center;
+				-webkit-box-align: center;
+				    -ms-flex-align: center;
+				        align-items: center;
 		margin-right: 50px;
 		margin-top: 0;
 		padding-top: 100px;
@@ -415,6 +428,8 @@ body{
 		background-color: #F4F8FF;
 		border-radius: 8px;
 		opacity: 1;
+		-webkit-transition: all 0.3s;
+		-o-transition: all 0.3s;
 		transition: all 0.3s;
 		overflow: hidden;
 }
@@ -429,8 +444,14 @@ body{
 	 margin-right: 32px;
 }
 
+.menu-item.active{
+	display: block;
+}
+
 .menu-item:hover{
 	  border-bottom: 2px solid #002262;
+	  -webkit-transition: border 0.2s linear;
+	  -o-transition: border 0.2s linear;
 	  transition: border 0.2s linear;
 }
 
@@ -439,24 +460,40 @@ body{
 }
 
 .menu-phones{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 
 .menu-phones.menu{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	width: 100%;
 	height: 101px;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 	position: relative;
 	top: 330px;
 	right: 48px;
 	z-index: 1000;
 	opacity: 1;
 	margin: 0;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
 	transition: all 0.3s;
 }
 
@@ -473,6 +510,8 @@ body{
 }
 
 .menu-phone:hover{
+	  -webkit-transition: border 0.1s linear;
+	  -o-transition: border 0.1s linear;
 	  transition: border 0.1s linear;
 	  border-bottom: 2px solid #002262;
 }
@@ -490,9 +529,15 @@ body{
 }
 
 .phone-button{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	width: 182px;
 	height: 38.1px;
 	padding: 0;
@@ -516,7 +561,11 @@ body{
 .phone-button:hover{
 	-webkit-box-shadow: 0 0 10px 7px rgb(51%, 51%, 96%, 0.5);
 	        box-shadow: 0 0 10px 7px rgb(51%, 51%, 96%, 0.5); 
-	  		transition: box-shadow 0.2s linear;
+	  		-webkit-transition: -webkit-box-shadow 0.2s linear; 
+	  		transition: -webkit-box-shadow 0.2s linear; 
+	  		-o-transition: box-shadow 0.2s linear; 
+	  		transition: box-shadow 0.2s linear; 
+	  		transition: box-shadow 0.2s linear, -webkit-box-shadow 0.2s linear;
 }
 
 .nav-border{
@@ -527,11 +576,15 @@ body{
 	padding: 18px;
 	width: 40px;
 	height: 40px;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
 	transition: all 0.3s;
 }
 
 .nav-border.active{
 	border:0;
+	-webkit-transition: border 0.3s;
+	-o-transition: border 0.3s;
 	transition: border 0.3s;
 }
 
@@ -561,14 +614,20 @@ body{
 	position: absolute;
 	left: 22%;
 	z-index: 1;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
 	transition: all 0.3s;
 }
 
 .nav-togle-item-top.active{
-	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	    -ms-transform: rotate(45deg);
+	        transform: rotate(45deg);
 	top: 17px;
 	width: 31px;
 	left: 11%;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
 	transition: all 0.3s;
 }
 
@@ -583,11 +642,15 @@ body{
 	position: absolute;
 	left: 22%;
 	z-index: 1;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
 	transition: all 0.3s;
 }
 
 .nav-togle-item-center.active{
 	display: none;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
 	transition: all 0.3s;
 }
 
@@ -602,14 +665,20 @@ body{
 	position: absolute;
 	left: 22%;
 	z-index: 1;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
 	transition: all 0.3s;
 }
 
 .nav-togle-item-bottom.active{
-	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	    -ms-transform: rotate(-45deg);
+	        transform: rotate(-45deg);
 	top: 17px;
 	width: 31px;
 	left: 11%;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
 	transition: all 0.3s;
 }
 
@@ -634,6 +703,7 @@ body{
 	position: relative;
 	padding-left: 20px;
 	padding-right: 20px;
+	height: 100vh;
 }
 
 .intro-dots{
@@ -699,9 +769,15 @@ body{
 }
 
 .intro-button{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	width: 345px;
 	height: 50px;
 	padding: 0;
@@ -725,7 +801,11 @@ body{
 .intro-button:hover{
 	-webkit-box-shadow: 0 0 10px 7px rgb(51%, 51%, 96%, 0.5);
 	        box-shadow: 0 0 10px 7px rgb(51%, 51%, 96%, 0.5);
+			-webkit-transition: -webkit-box-shadow 0.2s linear;
+			transition: -webkit-box-shadow 0.2s linear;
+			-o-transition: box-shadow 0.2s linear;
 			transition: box-shadow 0.2s linear;
+			transition: box-shadow 0.2s linear, -webkit-box-shadow 0.2s linear;
 }
 
 .intro-image{
@@ -783,7 +863,7 @@ body{
 .servise-title{
 	position: relative;
 	padding-top: 80px;
-	margin-bottom: 24px;
+	margin-bottom: 15px;
 	font-family: 'Gilroy';
 	font-style: normal;
 	font-weight: 600;
@@ -963,12 +1043,18 @@ body{
 .info-button:hover{
 	-webkit-box-shadow: 0 0 10px 4px rgb(51%, 51%, 96%, 0.2);
 	        box-shadow: 0 0 10px 4px rgb(51%, 51%, 96%, 0.2);
+			-webkit-transition: -webkit-box-shadow 0.2s linear;
+			transition: -webkit-box-shadow 0.2s linear;
+			-o-transition: box-shadow 0.2s linear;
 			transition: box-shadow 0.2s linear;
+			transition: box-shadow 0.2s linear, -webkit-box-shadow 0.2s linear;
 }
 
 .item-info{
 	display: none;
 	position: relative;
+	top: 8px;
+	left: 6px;
 	height: 486px;
 	width: 347px;
 	border-radius: 4px;
@@ -1001,7 +1087,11 @@ body{
 .info-close:hover{
 	width: 13.4px;
 	height: 13.4px;
+	-webkit-transition: width 0.2s linear;
+	-o-transition: width 0.2s linear;
 	transition: width 0.2s linear;
+	-webkit-transition: height 0.2s linear;
+	-o-transition: height 0.2s linear;
 	transition: height 0.2s linear;
 }
 
@@ -1043,9 +1133,15 @@ body{
 }
 
 .item-button{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	width: 90%;
 	height: 50px;
 	margin-top: 40px;
@@ -1071,7 +1167,11 @@ body{
 .item-button:hover{
 	-webkit-box-shadow: 0 0 10px 7px rgb(51%, 51%, 96%, 0.5);
 	        box-shadow: 0 0 10px 7px rgb(51%, 51%, 96%, 0.5);
+			-webkit-transition: -webkit-box-shadow 0.2s linear;
+			transition: -webkit-box-shadow 0.2s linear;
+			-o-transition: box-shadow 0.2s linear;
 			transition: box-shadow 0.2s linear;
+			transition: box-shadow 0.2s linear, -webkit-box-shadow 0.2s linear;
 }
 
 /*advantages*/
@@ -1141,7 +1241,6 @@ body{
 
 .advantages-item-logo{
 	max-width: 76px;
-	width: 100%;
 	height: 76px;
 	margin-right: 26px;
 }
@@ -1526,7 +1625,11 @@ body{
 .succesful-button:hover{
 	-webkit-box-shadow: 0 0 10px 7px rgb(51%, 51%, 96%, 0.5);
 	        box-shadow: 0 0 10px 7px rgb(51%, 51%, 96%, 0.5); 
-			transition: box-shadow 0.2s linear;
+			-webkit-transition: -webkit-box-shadow 0.2s linear; 
+			transition: -webkit-box-shadow 0.2s linear; 
+			-o-transition: box-shadow 0.2s linear; 
+			transition: box-shadow 0.2s linear; 
+			transition: box-shadow 0.2s linear, -webkit-box-shadow 0.2s linear;
 }
 
 
@@ -1655,9 +1758,15 @@ body{
 }
 
 .prise-button{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	width: 345px;
 	height: 50px;
 	border-radius: 4px;
@@ -1680,7 +1789,11 @@ body{
 .prise-button:hover{
 	-webkit-box-shadow: 0 0 10px 4px rgb(51%, 51%, 96%, 0.6);
 	        box-shadow: 0 0 10px 4px rgb(51%, 51%, 96%, 0.6);
+			-webkit-transition: -webkit-box-shadow 0.2s linear;
+			transition: -webkit-box-shadow 0.2s linear;
+			-o-transition: box-shadow 0.2s linear;
 			transition: box-shadow 0.2s linear;
+			transition: box-shadow 0.2s linear, -webkit-box-shadow 0.2s linear;
 }
 
 /*calculator-info*/
@@ -1892,7 +2005,11 @@ body{
 .calculator-submit:hover{
 	-webkit-box-shadow: 0 0 10px 4px rgb(51%, 51%, 96%, 0.3);
 	        box-shadow: 0 0 10px 4px rgb(51%, 51%, 96%, 0.3);
+			-webkit-transition: -webkit-box-shadow 0.2s linear;
+			transition: -webkit-box-shadow 0.2s linear;
+			-o-transition: box-shadow 0.2s linear;
 			transition: box-shadow 0.2s linear;
+			transition: box-shadow 0.2s linear, -webkit-box-shadow 0.2s linear;
 }
 
 /*easy-footer*/
@@ -2000,6 +2117,8 @@ body{
 
 .phone-nummer:hover{
 	color: rgb(0%, 0%, 0%, 0.3);
+	-webkit-transition: color 0.2s linear;
+	-o-transition: color 0.2s linear;
 	transition: color 0.2s linear;
 }
 
@@ -2019,6 +2138,8 @@ body{
 
 .home-nummer-icon:hover{
 	opacity: 0.7;
+	-webkit-transition: opacity 0.2s linear;
+	-o-transition: opacity 0.2s linear;
 	transition: opacity 0.2s linear;
 }
 
@@ -2059,6 +2180,7 @@ body{
     margin: auto;
 	background: #FFFFFF;
 	z-index: 50001;
+
 }
 
 .prise-item-before.servise{
@@ -2107,7 +2229,11 @@ body{
 .form-title-close:hover{
 	width: 13.4px;
 	height: 13.4px;
+	-webkit-transition: width 0.2s linear;
+	-o-transition: width 0.2s linear;
 	transition: width 0.2s linear;
+	-webkit-transition: height 0.2s linear;
+	-o-transition: height 0.2s linear;
 	transition: height 0.2s linear;
 }
 
@@ -2206,7 +2332,11 @@ body{
 .item-button:hover{
 	-webkit-box-shadow: 0 0 10px 7px rgb(51%, 51%, 96%, 0.5);
 	        box-shadow: 0 0 10px 7px rgb(51%, 51%, 96%, 0.5);
+			-webkit-transition: -webkit-box-shadow 0.2s linear;
+			transition: -webkit-box-shadow 0.2s linear;
+			-o-transition: box-shadow 0.2s linear;
 			transition: box-shadow 0.2s linear;
+			transition: box-shadow 0.2s linear, -webkit-box-shadow 0.2s linear;
 }
 
 
@@ -2419,10 +2549,13 @@ body{
 	.menu-content{
 	opacity: 0;
 	margin-top: -103vh;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
 	transition: all 0.3s;
 	}
 	
 	.menu-item{
+		display: none;
 		font-size: 24px;
 		margin-right: 18px;
 		line-height: 47px;
@@ -3003,6 +3136,10 @@ body{
 		margin-top: 20px;
 	}
 	
+	.form-title{
+		margin-top: 150px;
+	}
+	
 	.prise-item-before{
 		top: 0;
 		left:0;
@@ -3405,7 +3542,6 @@ body{
 	
 		
 }
-
 
 
 

@@ -67,6 +67,7 @@ $('#other').click(function() {
 $('.info-close').click(function() {
 	$('.item-info').removeClass('active');
 	$('.info-button').removeClass('active');
+	$('.menu-item').removeClass('active');
  });
 
 $('.nav-border').click(function() {
@@ -76,6 +77,7 @@ $('.nav-border').click(function() {
 	$('.nav-togle-item-top').toggleClass('active');
 	$('.nav-togle-item-center').toggleClass('active');
 	$('.nav-togle-item-bottom').toggleClass('active');
+	$('.menu-item').addClass('active');
  });
 
 $('.menu-item, .phone-button').click(function() {
@@ -115,7 +117,7 @@ $(function(){
  $("[data-scroll]").on("click", function(event) {
    event.preventDefault();
    var blockid = $(this).data("scroll"),
-   blockOffset = $(blockid).offset().top-200;
+   blockOffset = $(blockid).offset().top-115;
 
  $("html, body").animate({
    scrollTop: blockOffset},500);
