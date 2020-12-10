@@ -2,6 +2,7 @@ $('.phone-button').click(function() {
 	$('#zatmenie').addClass('active');
 	$('#prise-item-head').addClass('active');
 	$('.head--fixed').addClass('gray');
+	$('.menu-item').removeClass('active');
  });
 
 $('.intro-button').click(function() {
@@ -28,6 +29,7 @@ $('.form-title-close').click(function() {
 	$('#zatmenie').removeClass('active');
 	$('.prise-item-before').removeClass('active');
 	$('.head--fixed').removeClass('gray');
+	$('.menu-item').removeClass('active');
  });
 
 $('#flet').click(function() {
@@ -67,7 +69,6 @@ $('#other').click(function() {
 $('.info-close').click(function() {
 	$('.item-info').removeClass('active');
 	$('.info-button').removeClass('active');
-	$('.menu-item').removeClass('active');
  });
 
 $('.nav-border').click(function() {
@@ -77,7 +78,7 @@ $('.nav-border').click(function() {
 	$('.nav-togle-item-top').toggleClass('active');
 	$('.nav-togle-item-center').toggleClass('active');
 	$('.nav-togle-item-bottom').toggleClass('active');
-	$('.menu-item').addClass('active');
+	$('.menu-item').toggleClass('active');
  });
 
 $('.menu-item, .phone-button').click(function() {
