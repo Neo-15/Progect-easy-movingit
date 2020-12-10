@@ -3086,6 +3086,15 @@ body{
 		padding-bottom: 30px;
 	}
 	
+	.item-info{
+		max-width: 347px;
+		width: 95%;
+	}
+	
+	.info-text{
+		width: 285px;
+	}
+	
 	.footer-menu{
 		margin-left: 0px;
 		margin-right: 0;
@@ -3397,6 +3406,10 @@ body{
 		
 		.info-title{
 			font-size: 20px;
+	}
+	
+	.item-info{
+		height: 410px;
 	}
 		
 		.info-text{
