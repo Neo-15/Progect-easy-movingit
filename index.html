@@ -4,25 +4,33 @@
     <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="js/slick-1.8.1/slick/slick.css"/>
     <title>Easy_Mooving</title>
   </head>
   <body>
-    <div class="zatmenie" id="zatmenie"></div>
+    <div class="zatmenie" id="zatmenie"></div> 
     <header class="head" id="head">
+	<form method="post" class="prise-item-before" name="priseform2" id="prise-item-head">
+			  <div class="form-title-close"></div>
+			  <div class="form-title">Форма для заказа</div>
+			  <input type="text" name="Myname" class="input-content" id="Myname" placeholder="Имя" value="Имя" required>
+			  <input type="tel" class="input-content" name="telephone" id="Mytelephone-input" placeholder="Номер телефона" value="Номер телефона" required>
+			  <input type="email" class="input-content" name="email" id="Myemails" placeholder="Email" value="Email" required>
+			  <div class="submit-form">
+			    <input type="submit" class="input-submit-form" value="Отправить">
+			  </div>
+			</form> 
       <img class="intro-dots" src="image/intro/dots.svg" width="184" height="193" alt="Dots">
-	  <img class="head_logo" src="image/header/logo.png" data-scroll="#intro" alt="logo">
+	  <img class="head_logo" src="image/header/logo.svg" data-scroll="#intro" alt="logo">
       <div class="menu-content" id="nav">
 		  <a class="menu-item" href="#" data-scroll="#Servises" >Услуги</a> 
-		  <a class="menu-item" href="#" data-scroll="#advantages" >Преимущества</a> 
+		  <a class="menu-item" href="#" data-scroll=".advantages" >Преимущества</a> 
 		  <a class="menu-item" href="#" data-scroll="#how-we-work" >Этапы работы</a> 
 		  <a class="menu-item" href="#" data-scroll="#prise" >Цены</a> 
 		  <a class="menu-item" href="#" data-scroll="#calculator" >Контакты</a> 
 	   </div>
 	   <div class="menu-phones">
-		 <a class="menu-phone-item" href="tel:+380683453517"></a>
-	     <a class="menu-phone" href="tel:+380683453517">+38 (068) 345 35 17</a>
-	     <input type="button" class="phone-button"  value="Заказать звонок">
+	     <a class="menu-phone" href="tel:+380683453517"><div class="menu-phone-item" style="background-image: url(image/header/telefone.svg)"></div><div>+38 (068) 345 35 17</div></a>
+		 <a class="phone-button">Заказать звонок</a>  
 	   </div>
 	   <div class="nav-border">
     	 <button class="nav-togle" id="nav-togle" type="button">
@@ -38,19 +46,19 @@
 		  <div class="intro-text">
 			 <div class="intro-title">Переезд - это искусство и мы в нем профи</div>
 			 <div class="intro-suptitle">Организуем профессиональный квартирный, офисный переезд по всей Украине.</div>
-			 <input type="button" class="intro-button" value="Заказать" id="intro-btn">
+			  <a class="intro-button" id="intro-btn">Заказать</a>
 		  </div>
 		  <div class="intro-image">
 		   <img class="intro-photo" src="image/intro/intro-photo.png" alt="photo">
 		  </div>
 		</div>
-	  </div>
-	  <form method="post" class="prise-item-before" name="priseform2" id="prise-item-form">
+		</div>
+		 <form method="post" class="prise-item-before" name="priseform2" id="prise-item-intro">
 			  <div class="form-title-close"></div>
 			  <div class="form-title">Форма для заказа</div>
-			  <input type="text" name="Myname" class="input-content" id="input-names" placeholder="Имя*">
-			  <input type="tel" class="input-content" name="telephone" id="telephone-input" placeholder="Номер телефона*">
-			  <input type="email" class="input-content" name="email" id="emails" placeholder="Email*">
+			  <input type="text" name="Myname" class="input-content" id="Myname" placeholder="Имя" value="Имя" required>
+			  <input type="tel" class="input-content" name="telephone" id="Mytelephone-input" placeholder="Номер телефона" value="Номер телефона" required>
+			  <input type="email" class="input-content" name="email" id="Myemails" placeholder="Email" value="Email" required>
 			  <div class="submit-form">
 			    <input type="submit" class="input-submit-form" value="Отправить">
 			  </div>
@@ -74,15 +82,15 @@
         <div class="item-suptitle"> Переезд в новую квартиру или дом может быть очень напряженным...</div>
         <div class="item-info" id="flets">
           <div class="info-title">Квартирный переезд</div>
-		  <input type="button" class="info-close" value=".">
+		  <a class="info-close"></a>
           <div class="info-text"> Eazy Moving работает над тем, чтобы помочь вам качественно и безопастно переехать. 
 		<p>A так же помочь вам со сборкой и разборкой мебели, с упаковкой и распаковкой любых вещей.</p> И что угодно по желанию клиента. С услугой “Переезд под ключ” вы и вовсе можите отдыхать - мы всё сделаем за вас! 
 	    <p>К каждому переезду мы подходим индивидуально и ответственно.</p></div>           
 		</div>
         <div class="service-buttons">
-		  <input type="button" class="info-button" id="flet" value=".">
+		  <a class="info-button" id="flet"></a> 
         </div>
-		<input type="button" class="item-button servise" value="Заказать">
+			<a class="item-button">Заказать</a>
         </div>
 		 <div class="servis-item">
         <img class="item-image" src="image/servise/ofice.png" alt="office">
@@ -90,28 +98,27 @@
         <div class="item-suptitle">  В офисном переезде крайне важны многие детали...</div>
         <div class="item-info" id="offices">
           <div class="info-title">Офисный переезд</div>
-		  <input type="button" class="info-close" value=".">
+			<a class="info-close"></a>
           <div class="info-text">   В офисном переезде крайне важны многие мелочи. Наш менеджер максимально точно оценит стоимость вашего переезда, расскажет нюансы и важные детали при переезде. Поможет решить поступающие по ходу вопросы и задачи. Eazy Moving огранизует переезд вашей компании максимально быстро, чтоб ваши сотрудники и не заметили переезда, а только новый вид из окна. </div>   
 		</div>
         <div class="service-buttons">
-		  <input type="button" class="info-button" id="office" value=".">
+			<a class="info-button" id="office"></a>
 		</div>
-		<input type="button" class="item-button servise" value="Заказать">	 
+			<a class="item-button">Заказать</a>	 
         </div>
 		 <div class="servis-item">
-        <img class="item-image" src="image/servise/comer.png" alt="comersian">
+        	<img class="item-image" src="image/servise/comer.png" alt="comersian">
         <div class="item-title">Коммерческие переезды</div>
         <div class="item-suptitle">Сотрудники Eazy Moving имеют огромный опыт такелажных работ...</div>
-		
         <div class="item-info" id="comersians">
           <div class="info-title">Комерческие и другие переезды</div>
-		  <input type="button" class="info-close" value=".">
+		  <a class="info-close"></a>
           <div class="info-text"> За многие годы работы мы перевозили отделения банков, сейфы разного веса, банкоматы, печатные станки, бренд зоны различных торговых марок, бутики одежды, простые магазинчики, ларьки, рождественские домики. Бережно перевозим пианифо, рояль, любую тяжёлую технику  и мебель. Кроме всего вывозим строительный мусор.</div>           
 		</div>
 		<div class="service-buttons">
-		  <input type="button" class="info-button" id="comersian" value=".">
+		  <a class="info-button" id="comersian"></a>
 		</div>
-		<input type="button" class="item-button servise" value="Заказать" >	 
+		<a class="item-button" >Заказать</a>	 
         </div>
 		 <div class="servis-item">
         <img class="item-image" src="image/servise/demon.png" alt="demon">
@@ -119,13 +126,13 @@
         <div class="item-suptitle"> Команда Easy Moving имеет большой опыт работы по сборке...  </div>
         <div class="item-info" id="destroys">
           <div class="info-title">Сборка, разборка, демонтаж </div>
-		  <input type="button" class="info-close" value=".">
+		  <a class="info-close"></a>
           <div class="info-text"> У нас есть хорошие специалисты мебельщики и все необходимые инструменты. Мы не боимся мощной советской мебели и нежной современной.Также мы монтируем и демонтируем торговые точки, бренд зоны, киоски, рождественские домики и т.п... Вывозим строительный мусор и многое д ругое. </div>           
 		</div>
        <div class="service-buttons">
-		  <input type="button" class="info-button" id="destroy" value=".">
+		   <a class="info-button" id="destroy"></a>
 		</div>
-		<input type="button" class="item-button servise" value="Заказать" >	 
+		<a class="item-button" >Заказать</a> 
         </div>
 		 <div class="servis-item">
         <img class="item-image" src="image/servise/forukraine.png" alt="for-ukraine">
@@ -133,13 +140,13 @@
         <div class="item-suptitle">  Если ваш переезд запланирован в другой конец страны...</div>
         <div class="item-info" id="get-ins" >
           <div class="info-title">Перевозки по всей Украине</div>
-		  <input type="button" class="info-close" value=".">
+		  <a class="info-close"></a>
           <div class="info-text"> Если ваш переезд запланирован в другой конец страны - это не проблема! Eazy Moving просчитает и организует найболее выгодный для вас маршрут.</div>        
 		</div>
 		<div class="service-buttons">
-		  <input type="button" class="info-button" id="get-in" value=".">
+		  <a class="info-button" id="get-in"></a>
 		</div>
-		<input type="button" class="item-button servise" value="Заказать">	 
+		<a  class="item-button" >Заказать</a>	 
         </div>
 		 <div class="servis-item">
         <img class="item-image" src="image/servise/others.png" alt="others">
@@ -147,22 +154,22 @@
         <div class="item-suptitle"> Сотрудники Eazy Moving имеют огромный опыт такелажных работ ... </div>
         <div class="item-info" id="others">
           <div class="info-title">Другие переезды</div>
-		  <input type="button" class="info-close" value=".">
+		  <a class="info-close"></a>
           <div class="info-text">  Сотрудники Eazy Moving имеют огромный опыт такелажных работ разного уровня сложности. Банковские сейфы, банкоматы, пианино, фортепиано, печатные станки и многое другое - в этой работе нам нет равных :)</div>           
 		</div>
         <div class="service-buttons">
-		  <input type="button" class="info-button" id="other" value=".">
+		   <a class="info-button" id="other"></a>
 		</div>
-        <input type="button" class="item-button servise" value="Заказать">
+       <a class="item-button" >Заказать</a>
         </div>
         </div>
       </div>
-	  <form method="post" class="prise-item-before" name="priseform2" id="prise-item-servise">
+		<form method="post" class="prise-item-before" name="priseform2" id="prise-item-servise">
 			  <div class="form-title-close"></div>
 			  <div class="form-title">Форма для заказа</div>
-			  <input type="text" name="Myname" class="input-content" id="input-names" placeholder="Имя*" value="Name">
-			  <input type="tel" class="input-content" name="telephone" id="telephone-input" placeholder="Номер телефона*" value="Nummer">
-			  <input type="email" class="input-content" name="email" id="emails" placeholder="Email*" value="Email">
+			  <input type="text" name="Myname" class="input-content" id="Myname" placeholder="Имя" value="Имя" required>
+			  <input type="tel" class="input-content" name="telephone" id="Mytelephone-input" placeholder="Номер телефона" value="Номер телефона" required>
+			  <input type="email" class="input-content" name="email" id="Myemails" placeholder="Email" value="Email" required>
 			  <div class="submit-form">
 			    <input type="submit" class="input-submit-form" value="Отправить">
 			  </div>
@@ -324,7 +331,7 @@
 				 <div class="prise-inform">Складские работы – грузчики, сортировщики, упаковщики.</div>
 			   </div>
 			   <div class="prise-submit">
-			     <input type="button" class="prise-button" value="Заказать">
+				   <a  class="prise-button">Заказать</a>
 			   </div>
 		     </div>
 			  <div class="prise-item">
@@ -337,7 +344,7 @@
 				 <div class="prise-inform">Монтаж/демонтаж вывисок бренд-зоны, фурнитуры.</div>
 			   </div>
 			   <div class="prise-submit">
-			     <input type="button" class="prise-button" value="Заказать">
+			     <a class="prise-button" popap>Заказать</a>
 			   </div>
 		     </div>
 			  <div class="prise-item">
@@ -349,7 +356,7 @@
 				<div class="prise-inform">Разгрузка и погрузка мебели.</div>
 				</div> 
 			   <div class="prise-submit">
-			     <input type="button" class="prise-button" value="Заказать">
+			     <a class="prise-button popap">Заказать</a>
 			   </div>
 			 </div>
 			  <div class="prise-item">
@@ -360,7 +367,7 @@
 			    <div class="prise-inform">Такелажные работы любой сложности – пианино, сейфы, печатные станки, крупная бытовая техника и всё, что тяжелее 100 кг.</div>
 				 </div> 
 			   <div class="prise-submit">
-			     <input type="button" class="prise-button" value="Заказать">
+			     <a class="prise-button popap">Заказать</a>
 			   </div>
 			 </div>
 			  <div class="prise-item">
@@ -374,42 +381,34 @@
 				  <div class="prise-inform">Мусоровоз.</div>
 			   </div>
 			   <div class="prise-submit">
-			     <input type="button" class="prise-button" value="Заказать" id="prise-item">
+			     <a class="prise-button popap">Заказать</a>
 			   </div>
 		     </div>
 		  </div>
 		 </div>
-	  <form method="post" class="prise-item-after" name="priseform2" id="priseid">
+		 <form method="post" class="prise-item-before" name="priseform2" id="prise-item">
 			  <div class="form-title-close"></div>
 			  <div class="form-title">Форма для заказа</div>
-			  <input type="text" name="Myname" class="input-content" id="Families" placeholder="Имя*">
-			  <input type="tel" class="input-content" name="telephone" id="telephones-nummer" placeholder="Номер телефона*">
-			  <input type="email" class="input-content" name="email" id="email-content" placeholder="Email*">
+			  <input type="text" name="Myname" class="input-content" id="Myname" placeholder="Имя" value="Имя" required>
+			  <input type="tel" class="input-content" name="telephone" id="Mytelephone-input" placeholder="Номер телефона" value="Номер телефона" required>
+			  <input type="email" class="input-content" name="email" id="Myemails" placeholder="Email" value="Email" required>
 			  <div class="submit-form">
 			    <input type="submit" class="input-submit-form" value="Отправить">
 			  </div>
 			</form>
-		    <div class="prise-form-succesful">
-			  <div class="succesful-logo"></div>
-			  <div class="succesful-title">Готово!</div>
-			  <div class="succesful-suptitle">Уже совсем скоро наш менеджер свяжется с вами.</div>
-			  <div class="submit-form">
-			    <input type="button" class="succesful-button" value="На главную">
-				</div>
-			</div>
 		</div>
 	    <div class="calculator-info" id="calculator">
 		  <div class="container">
 			<div class="calculator-title">Желаете заказать или просчитать переезд?</div>
 			<form class="calculator-content" id="content-carculator">
 			  <div class="calculator-contact">
-			    <input type="text" name="famile" id="familie" class="calculator-item" placeholder="Имя*">
-			    <input type="tel" class="calculator-item"  name="telephone" id="telephones" placeholder="Номер телефона*">
-			     <input type="email" class="calculator-item" placeholder="Email*">
+			    <input type="text" name="famile" id="familie" class="calculator-item" placeholder="Имя" required> 
+			    <input type="tel" class="calculator-item"  name="telephone" id="telephones" placeholder="Номер телефона" required>
+			     <input type="email" class="calculator-item" placeholder="Email" required>
 			  </div>
 			  <div class="text-area">
                 <label class="calculator-label" for="From_where_and_where?">Что будем перевозить? От куда и куда?</label>
-	            <textarea form="content-carculator" class="calculator-textarea" name="What_will_we_transport?" id="From where and where?" ></textarea>
+	            <textarea form="content-carculator" class="calculator-textarea" name="What_will_we_transport?" id="From_where_and_where?" ></textarea>
 			    <input class="calculator-submit" type="submit" value="Отправить">
 			  </div>
 			</form>
@@ -419,7 +418,7 @@
           <div class="container">
 		    <div class="easy-footer-content">
 			<div class="footer-logo-container">
-			<img class="footer-logo" src="image/footer/logo.png" data-scroll="#intro" alt="footer-logo">
+			<img class="footer-logo" src="image/footer/logo.svg" data-scroll="#intro" alt="footer-logo">
 			</div>
 			<div class="footer-info">
 			<div class="footer-menu">
@@ -432,21 +431,31 @@
 		  </div>
 		  <div class="footer-contacts">
 		    <div class="footer-menu-title">Контакты</div>
-			  <a class="phone-nummer" href="tel:+38(063)6797678" >+38 (063)679 76 78</a>
-			  <a class="phone-nummer" href="tel:++38(050)2757248" >+38 (050) 275 72 48</a>
-			  <a class="phone-nummer" href="tel:+38(068)3453517" >+38 (068) 345 35 17</a>
-			  <a class="phone-nummer" href="https://eazymoving.ua@gmail.com"  target="_blank">eazymoving.ua@gmail.com</a>
+			  <a class="phone-nummer" href="tel:+38(063)6797678" ><div class="home-nummer-icon" style="background-image: url(image/footer/telefone.svg)"></div><div>+38 (063)679 76 78</div></a>
+			  <a class="phone-nummer" href="tel:++38(050)2757248" ><div class="home-nummer-icon" style="background-image: url(image/footer/telefone.svg)"></div><div>+38 (050) 275 72 48</div></a>
+			  <a class="phone-nummer" href="tel:+38(068)3453517" ><div class="home-nummer-icon" style="background-image: url(image/footer/telefone.svg)"></div><div>+38 (068) 345 35 17</div></a>
+			  <a class="phone-nummer" href="https://eazymoving.ua@gmail.com"  target="_blank"><div class="home-nummer-icon" style="background-image: url(image/footer/email.svg)"></div><div>eazymoving.ua@gmail.com</div></a>
 		  </div>
 		  <div class="footer-social">
 		    <div class="footer-menu-title">Соцсети</div>
-			  <a class="phone-nummer" href="https://www.viber.com/en/"  target="_blank">Viber</a>
-			  <a class="phone-nummer" href="https://www.whatsapp.com/?lang=uk"  target="_blank">Whatsapp</a>
-			  <a class="phone-nummer" href="https://web.telegram.org/"  target="_blank">Telegram</a>
+			  <a class="phone-nummer" href="https://www.viber.com/en/"  target="_blank"><div class="home-nummer-icon" style="background-image: url(image/footer/viber.svg)"></div><div>Viber</div></a>
+			  <a class="phone-nummer" href="https://www.whatsapp.com/?lang=uk"  target="_blank"><div class="home-nummer-icon" style="background-image: url(image/footer/whattsapp.svg)"></div><div>Whatsapp</div></a>
+			  <a class="phone-nummer" href="https://web.telegram.org/"  target="_blank"><div class="home-nummer-icon" style="background-image: url(image/footer/telegram.svg)"></div><div>Telegram</div></a>
 		  </div>
 		  </div>
 		  </div>
 		  </div>
 	    </footer>
+	   <form method="post" class="prise-item-before" name="priseform2" id="prise-item-servise">
+			  <div class="form-title-close"></div>
+			  <div class="form-title">Форма для заказа</div>
+			  <input type="text" name="Myname" class="input-content" id="Myname" placeholder="Имя" value="Имя" required>
+			  <input type="tel" class="input-content" name="telephone" id="Mytelephone-input" placeholder="Номер телефона" value="Номер телефона" required>
+			  <input type="email" class="input-content" name="email" id="Myemails" placeholder="Email" value="Email" required>
+			  <div class="submit-form">
+			    <input type="submit" class="input-submit-form" value="Отправить">
+			  </div>
+			</form>
 	  <script src="js/jquery-3.5.1.min.js"></script>
 	  <script src="js/apps.js"></script>
   </body>

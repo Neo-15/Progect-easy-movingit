@@ -1,68 +1,43 @@
-
 $('.phone-button').click(function() {
 	$('#zatmenie').addClass('active');
-	$('#prise-item-form').addClass('active');
-	
+	$('#prise-item-head').addClass('active');
+	$('.head--fixed').addClass('gray');
  });
 
-$('#intro-btn').click(function() {
+$('.intro-button').click(function() {
 	$('#zatmenie').addClass('active');
-	$('#prise-item-form').addClass('active');
-	
+	$('#prise-item-intro').addClass('active');
+	$('.head--fixed').addClass('gray');
  });
 
-$('.form-title-close').click(function() {
-	$('#zatmenie').removeClass('active');
-	$('#prise-item-form').removeClass('active');
- });
-
-
-$('.servise').click(function() {
+$('.item-button').click(function() {
 	$('#zatmenie').addClass('active');
 	$('#prise-item-servise').addClass('active');
+	$('.prise-item-before').addClass('servise');
+	$('.head--fixed').addClass('gray');
  });
-
-$('.form-title-close').click(function() {
-	$('#zatmenie').removeClass('active');
-	$('#prise-item-servise').removeClass('active');
-
- });
-
 
 $('.prise-button').click(function() {
 	$('#zatmenie').addClass('active');
-	$('#priseid').addClass('active');
+	$('#prise-item').addClass('active');
+	$('.prise-item-before').addClass('servise');
+	$('.head--fixed').addClass('gray');
  });
 
 $('.form-title-close').click(function() {
 	$('#zatmenie').removeClass('active');
-	$('#priseid').removeClass('active');
-
+	$('.prise-item-before').removeClass('active');
+	$('.head--fixed').removeClass('gray');
  });
-
-
 
 $('#flet').click(function() {
 	$('#flets').addClass('active');
 	$('#flet').addClass('active');
-
- });
-
-$('.info-close').click(function() {
-	$('#flets').removeClass('active');
-	$('#flet').removeClass('active');
-
  });
 
 $('#office').click(function() {
 	$('#offices').addClass('active');
 	$('#office').addClass('active');
-
- });
-
-$('.info-close').click(function() {
-	$('#offices').removeClass('active');
-	$('#office').removeClass('active');
 
  });
 
@@ -72,21 +47,9 @@ $('#comersian').click(function() {
 
  });
 
-$('.info-close').click(function() {
-	$('#comersians').removeClass('active');
-	$('#comersian').removeClass('active');
-
- });
-
 $('#destroy').click(function() {
 	$('#destroys').addClass('active');
 	$('#destroy').addClass('active');
-
- });
-
-$('.info-close').click(function() {
-	$('#destroys').removeClass('active');
-	$('#destroy').removeClass('active');
 
  });
 
@@ -96,38 +59,38 @@ $('#get-in').click(function() {
 
  });
 
-$('.info-close').click(function() {
-	$('#get-ins').removeClass('active');
-	$('#get-in').removeClass('active');
-
- });
-
 $('#other').click(function() {
 	$('#others').addClass('active');
 	$('#other').addClass('active');
-
  });
 
 $('.info-close').click(function() {
-	$('#others').removeClass('active');
-	$('#other').removeClass('active');
-
+	$('.item-info').removeClass('active');
+	$('.info-button').removeClass('active');
  });
-
 
 $('.nav-border').click(function() {
-	$('.menu-content').addClass('size1024px');
-
+	$('.menu-content').toggleClass('mobile');
+	$('.menu-phones').toggleClass('menu');
+	$('.nav-border').toggleClass('active');
+	$('.nav-togle-item-top').toggleClass('active');
+	$('.nav-togle-item-center').toggleClass('active');
+	$('.nav-togle-item-bottom').toggleClass('active');
  });
 
-$('.intro, .Services, .advantages, .how-we-work, .achievements, .prise, .calculator-info, .easy-footer').click(function() {
-    $('.menu-content').removeClass('size1024px');
+$('.menu-item, .phone-button').click(function() {
+	$('.menu-content').removeClass('mobile');
+	$('.menu-phones').removeClass('menu');
+	$('.nav-border').removeClass('active');
+	$('.nav-togle-item-top').removeClass('active');
+	$('.nav-togle-item-center').removeClass('active');
+	$('.nav-togle-item-bottom').removeClass('active');
  });
 
 
 $(function(){
  var header=$("#head"),
- introH = $("#intro").innerHeight(),
+ introH = $("#head").innerHeight(),
  scrollOffset =$(window).scrollTop();
 
  /* Fixed Head */	
@@ -152,7 +115,7 @@ $(function(){
  $("[data-scroll]").on("click", function(event) {
    event.preventDefault();
    var blockid = $(this).data("scroll"),
-   blockOffset = $(blockid).offset().top;
+   blockOffset = $(blockid).offset().top-200;
 
  $("html, body").animate({
    scrollTop: blockOffset},500);
@@ -165,6 +128,8 @@ $(function(){
    $("#head").toggleClass("active");	
  });	
 });
+	
+
 	
 
 
