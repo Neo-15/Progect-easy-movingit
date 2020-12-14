@@ -362,7 +362,7 @@ body{
 	top: -24px;
 	left: 0;
 	right: 0;
-	z-index: 1000;
+	z-index: 10;
 	opacity: 1;
 	-webkit-transform: translate3d(0,0,0);
 	        transform: translate3d(0,0,0);
@@ -488,7 +488,7 @@ body{
 	    flex-wrap: wrap;
 	position: relative;
 	top: 330px;
-	right: 48px;
+	right: 38px;
 	z-index: 1000;
 	opacity: 1;
 	margin: 0;
@@ -703,7 +703,7 @@ body{
 	position: relative;
 	padding-left: 20px;
 	padding-right: 20px;
-	height: 100vh;
+	height: 90vh;
 }
 
 .intro-dots{
@@ -729,6 +729,7 @@ body{
 
 .intro-content{
 	position: relative;
+	z-index: 5;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -1025,7 +1026,7 @@ body{
 	width: 24px;
 	height: 24px;
 	position: absolute;
-	left: 45%;
+	left: 47%;
 	top: -12px;
 	z-index: 1;
 	background: url('../image/servise/info-button.png');
@@ -1051,20 +1052,22 @@ body{
 }
 
 .item-info{
-	display: none;
-	position: relative;
+	display: block;
+	position: absolute;
 	top: 8px;
 	left: 6px;
+	z-index: -1;
 	height: 486px;
 	width: 347px;
 	border-radius: 4px;
 	background: #eaeafc;
+	opacity: 0;
 }
 
 .item-info.active{
-	display: block;
-	position: absolute;
 	z-index: 1000;
+	opacity: 1;
+	transition: opacity 0.3s linear;
 }
 
 .info-close{
@@ -1544,6 +1547,7 @@ body{
 	    flex-wrap: wrap;
 	padding-bottom: 100px;
 	position: relative;
+	z-index: 5;
 }
 
 .prise-form-succesful{
@@ -1850,7 +1854,7 @@ body{
 	position: absolute;
 	top:-172px;
 	right: 403px;
-	z-index: 1;
+	z-index: 6;
 	background: url("../image/dots2opasity.svg");
 	background-repeat: no-repeat;
 	background-position: center;
@@ -1930,6 +1934,7 @@ body{
 	width: 48%;
 	margin-left: 136px;
 	position: relative;
+	z-index: 5;
 }
 
 .text-area::before{
@@ -1941,7 +1946,7 @@ body{
 	position: absolute;
 	top:-118px;
 	right: -62px;
-	z-index: 1;
+	z-index: 5;
 	background: url("../image/dots2opasity.svg");
 	background-repeat: no-repeat;
 	background-position: center;
@@ -2160,24 +2165,32 @@ body{
 /*form-pop-ap*/
 
 .zatmenie{
-		display: none;
+		display: block;
 		background: rgba(102, 102, 102, 0.5);
         width: 100%;
         height: 655%;
         position: fixed;
         top: 0;
         left: 0;
-		z-index: 1000;
+		z-index: -1;
+		opacity: 0;
+}
+
+.zatmenie.active{
+	z-index: 1000;
+	opacity: 1;
+	transition: opacity 0.4s linear;
 }
 
 .prise-item-before{
-	display: none;
+	display: block;
 	position: fixed;
 	top: 19%;
 	left: 33%;
 	width: 604px;
 	height: 562px;
     margin: auto;
+	margin-top: 1000px;
 	background: #FFFFFF;
 	z-index: 50001;
 
@@ -2189,12 +2202,10 @@ body{
 }
 
 .prise-item-before.active{
-	display: block;
+	margin-top: 0;
+	transition: margin-top 0.5s linear;
 }
 
-.prise-item-after.active{
-	display: block;
-}
 
 .form-title{
 	margin-top: 60px;
@@ -2307,6 +2318,7 @@ body{
 	        justify-content: center;
 }
 
+
 .input-submit-form{
 	width: 345px;
 	height: 50px;
@@ -2329,7 +2341,7 @@ body{
 	outline: none;
 }
 
-.item-button:hover{
+.input-submit-form:hover{
 	-webkit-box-shadow: 0 0 10px 7px rgb(51%, 51%, 96%, 0.5);
 	        box-shadow: 0 0 10px 7px rgb(51%, 51%, 96%, 0.5);
 			-webkit-transition: -webkit-box-shadow 0.2s linear;
@@ -2339,10 +2351,6 @@ body{
 			transition: box-shadow 0.2s linear, -webkit-box-shadow 0.2s linear;
 }
 
-
-.zatmenie.active{
-	display: block;
-}
 
 
 @media ( max-width:1315px){
@@ -3089,6 +3097,8 @@ body{
 	.item-info{
 		max-width: 347px;
 		width: 95%;
+		top: 7px;
+    	left: 9.5px;
 	}
 	
 	.info-text{
@@ -3239,6 +3249,7 @@ body{
 	
 	.servis-item{
 		margin: 0;
+		margin-bottom: 15px;
 	}
 	
 	.servis-item:nth-of-type(1)::before{
@@ -3376,40 +3387,46 @@ body{
 	}
 	
 		.nav-border{
-			right: 20px;
+		 right: 20px;
 	}
 		
 		.Services{
-			padding-left: 10px;
-			padding-right: 10px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	
+		.servis-item{
+		height: 435px;
 	}
 	
 		.servis-item:nth-of-type(1)::after {
-    		right: -6px;
+    	right: -6px;
 	}
 		
 		.servise-title{
-			font-size: 26px;
-			padding-top: 20px;
-			margin-bottom: 0;
+		font-size: 26px;
+		padding-top: 20px;
+		margin-bottom: 0;
 	}
 		
 		.item-title{
-			font-size: 16px;
-			line-height: 20px;
+		font-size: 16px;
+		line-height: 20px;
 	}
 		
 		.item-suptitle{
-			font-size: 14px;
-			line-height: 20px;
+		font-size: 14px;
+		line-height: 20px;
 	}
 		
 		.info-title{
-			font-size: 20px;
+		font-size: 20px;
 	}
 	
 	.item-info{
-		height: 410px;
+		height: 420px;
+		top: 8px;
+    	left: 8.5px;
 	}
 		
 		.info-text{
@@ -3417,15 +3434,15 @@ body{
 	}
 		
 		.item-button{
-			margin-top: 20px;
-			height: 30px;
-			width: 70%;
-			font-size: 13px;
+		margin-top: 20px;
+		height: 30px;
+		width: 70%;
+		font-size: 13px;
 	}
 		
 		.info-button{
-			width: 19px;
-			height: 19px;
+		width: 19px;
+		height: 19px;
 	}
 
 		.form-title{
@@ -3493,13 +3510,13 @@ body{
 	}
 	
 	.photo-content {
-    height: 235px;
+    	height: 235px;
 	}
 
 	.text-item {
-    width: 90px;
-	margin-left: 32px;
-	margin-right: 30px;
+		width: 90px;
+		margin-left: 32px;
+		margin-right: 30px;
 	}
 	
 	.achievements-image{
@@ -3522,7 +3539,7 @@ body{
 	}
 	
 	.photo-content {
-    height: 235px;
+    	height: 235px;
 	}
 	
 	.text-achievemenst{
@@ -3531,29 +3548,33 @@ body{
 		margin-left: 18px;
 	}
 		
-		.text-item-title{
-			margin-left: 18px;
+	.text-item-title{
+		margin-left: 18px;
 	}
 		
-		.text-item:nth-of-type(1) .text-achievemenst {
+	.text-item:nth-of-type(1) .text-achievemenst {
     	width: 122%;
 	}
 		
-		.Achievements{
-			padding-left: 0;
-			padding-right: 0;
-			padding-bottom: 50px;
+	.Achievements{
+		padding-left: 0;
+		padding-right: 0;
+		padding-bottom: 50px;
 	}
 		
-		.prise-item{
+	.prise-item{
 		width: 275px;
 	}
 		
-		.footer-menu{
+	.footer-menu{
 			margin-left: 25px;
 	}
-	
 		
+}
+
+	@media (max-width:320px){
+	.item-info {
+		left: 7px;
 }
 
 
