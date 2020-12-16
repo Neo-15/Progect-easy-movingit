@@ -1,7 +1,13 @@
 $('.phone-button').click(function() {
 	$('#zatmenie').addClass('active');
-	$('#prise-item-head').addClass('active');
 	$('.head--fixed').addClass('gray');
+	$('#prise-item-head').addClass('active');
+	if ( $(".head").hasClass("head--fixed") ) {
+		$('#prise-item-head').addClass('top');
+	}
+	else{
+		$('#prise-item-head').removeClass('top');
+	}
 	$('.menu-item').removeClass('active');
  });
 
@@ -14,23 +20,43 @@ $('.intro-button').click(function() {
 $('.item-button').click(function() {
 	$('#zatmenie').addClass('active');
 	$('#prise-item-servise').addClass('active');
-	$('.prise-item-before').addClass('servise');
 	$('.head--fixed').addClass('gray');
+	$('.prise-item-before').addClass('servise');
  });
 
 $('.prise-button').click(function() {
 	$('#zatmenie').addClass('active');
 	$('#prise-item').addClass('active');
-	$('.prise-item-before').addClass('servise');
 	$('.head--fixed').addClass('gray');
+	$('.prise-item-before').addClass('servise');
  });
 
 $('.form-title-close').click(function() {
 	$('#zatmenie').removeClass('active');
 	$('.prise-item-before').removeClass('active');
-	$('.head--fixed').removeClass('gray');
 	$('.menu-item').removeClass('active');
+	$('.head--fixed').removeClass('gray');
  });
+
+$('.input-submit-form').click(function() {
+	$('.prise-form-succesful').addClass('active');
+	$('#prise-item-head').removeClass('top');
+	$('.prise-item-before').removeClass('active');
+	if ( $(".head").hasClass("head--fixed") ) {
+		$('.prise-form-succesful').addClass('fixed');
+	}
+	else{
+		$('.prise-form-succesful').removeClass('fixed');
+		
+	}
+ });
+
+$('.succesful-button').click(function() {
+	$('#zatmenie').removeClass('active');
+	$('.prise-form-succesful').removeClass('active');
+	$('.head--fixed').removeClass('gray');
+ });
+
 
 $('#flet').click(function() {
 	$('#flets').addClass('active');
