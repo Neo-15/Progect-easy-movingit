@@ -391,7 +391,7 @@ body{
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	    align-items: center;
-	height: 40px;
+	height: 42px;
 	margin-right: 189.25px;
 }
 
@@ -431,6 +431,7 @@ body{
 }
 
 .menu-item{
+	 height: 27px;
 	 font-family: 'Gilroy';
 	 font-size: 16px;
 	 font-weight: 600;
@@ -438,6 +439,9 @@ body{
 	 text-decoration: none;
 	 color: #002262;
 	 margin-right: 32px;
+	 cursor: pointer;
+	 transition: border 0.3s linear;
+	 border: 2px solid transparent;
 }
 
 .menu-item.active{
@@ -446,9 +450,9 @@ body{
 
 .menu-item:hover{
 	  border-bottom: 2px solid #002262;
-	  -webkit-transition: border 0.2s linear;
-	  -o-transition: border 0.2s linear;
-	  transition: border 0.2s linear;
+	  -webkit-transition: border 0.3s linear;
+	  -o-transition: border 0.3s linear;
+	  transition: border 0.3s linear;
 }
 
 .menu-item:last-of-type{
@@ -469,7 +473,7 @@ body{
 	display: -ms-flexbox;
 	display: flex;
 	width: 100%;
-	height: 101px;
+	height: 121px;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: column;
@@ -495,7 +499,8 @@ body{
 
 .menu-phone{
 	 position: relative;
-	margin-right: 15px;
+	 height: 27px;
+	 margin-right: 15px;
 	 font-family: 'Gilroy';
 	 font-style: normal;
 	 font-weight: normal;
@@ -503,12 +508,14 @@ body{
 	 line-height: 24px;
 	 text-decoration: none;
 	 color: #000;
+	 transition: border 0.3s linear;
+	 border: 2px solid transparent;
 }
 
 .menu-phone:hover{
-	  -webkit-transition: border 0.1s linear;
-	  -o-transition: border 0.1s linear;
-	  transition: border 0.1s linear;
+	  -webkit-transition: border 0.3s linear;
+	  -o-transition: border 0.3s linear;
+	  transition: border 0.3s linear;
 	  border-bottom: 2px solid #002262;
 }
 
@@ -537,9 +544,10 @@ body{
 	width: 182px;
 	height: 38.1px;
 	padding: 0;
+	cursor: pointer;
 	background: #8181F6;
-	-webkit-box-shadow: 0px 4px 20px rgba(0, 34, 98, 0.15);
-	        box-shadow: 0px 4px 20px rgba(0, 34, 98, 0.15);
+	box-shadow: 0 0 10px 7px transparent;
+	transition: box-shadow 0.4s linear;	
 	border: 0;
 	border-bottom: 2px solid #002262;
 	border-radius: 4px;
@@ -559,9 +567,9 @@ body{
 	        box-shadow: 0 0 10px 7px rgb(51%, 51%, 96%, 0.5); 
 	  		-webkit-transition: -webkit-box-shadow 0.2s linear; 
 	  		transition: -webkit-box-shadow 0.2s linear; 
-	  		-o-transition: box-shadow 0.2s linear; 
-	  		transition: box-shadow 0.2s linear; 
-	  		transition: box-shadow 0.2s linear, -webkit-box-shadow 0.2s linear;
+	  		-o-transition: box-shadow 0.3s linear; 
+	  		transition: box-shadow 0.3s linear; 
+	  		transition: box-shadow 0.3s linear, -webkit-box-shadow 0.2s linear;
 }
 
 .nav-border{
@@ -702,8 +710,8 @@ body{
 
 .intro-dots{
 	position: absolute;
-	left: -120px;
-	top: 22.18px;
+	left: -21px;
+	top: -87px;
 	z-index: 5;
 }
 
@@ -777,6 +785,7 @@ body{
 	width: 345px;
 	height: 50px;
 	padding: 0;
+	cursor: pointer;
 	border-radius: 4px;
 	background: #8181F6;
 	font-family: 'Gilroy';
@@ -792,6 +801,8 @@ body{
 	border: 0;
 	border-bottom: 2px solid #002262;
 	outline: none;
+	box-shadow: 0 0 10px 7px transparent;
+	transition: box-shadow 0.4s linear;	
 }
 
 .intro-button:hover{
@@ -1030,6 +1041,9 @@ body{
 	background-position: center;
 	border: 0;
 	outline: none;
+	cursor: pointer;
+	box-shadow: 0 0 10px 7px transparent;
+	transition: box-shadow 0.4s linear;	
 }
 
 .info-button.active{
@@ -1082,6 +1096,9 @@ body{
 	background-size: cover;
 	border: 0;
 	outline: none;
+	cursor: pointer;
+	transition: width 0.2s linear;
+	transition: height 0.2s linear;
 }
 
 .info-close:hover{
@@ -1118,6 +1135,7 @@ body{
 	line-height: 31px;
 	text-align: center;
 	color: #000000;
+	overflow: hidden;
 }
 
 .info-text p{
@@ -1162,6 +1180,9 @@ body{
 	border: 0;
 	border-bottom: 2px solid #002262;
 	outline: none;
+	cursor: pointer;
+	box-shadow: 0 0 10px 7px transparent;
+	transition: box-shadow 0.4s linear;	
 }
 
 .item-button:hover{
@@ -1698,6 +1719,9 @@ body{
 	border: 0;
 	border-bottom: 2px solid #002262;
 	outline: none;
+	cursor: pointer;
+	box-shadow: 0 0 10px 7px transparent;
+	transition: box-shadow 0.4s linear;	
 }
 
 .prise-button:hover{
@@ -1753,6 +1777,7 @@ body{
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;
 	position: relative;
+	z-index: 10;
 }
 
 .calculator-contact::before{
@@ -1915,6 +1940,9 @@ body{
 	border: 0;
 	border-bottom: 2px solid #002262;
 	outline: none;
+	cursor: pointer;
+	box-shadow: 0 0 10px 7px transparent;
+	transition: box-shadow 0.4s linear;	
 }
 
 .calculator-submit:hover{
@@ -1993,6 +2021,8 @@ body{
 	line-height: 24px;
 	color: #000000;
 	text-decoration: none;
+	cursor: pointer;
+	transition: color 0.3s linear;
 }
 
 .footer-item:hover{
@@ -2028,6 +2058,8 @@ body{
 	color: #000000;
 	text-decoration: none;
 	margin-bottom: 8px;
+	cursor: pointer;
+	transition: color 0.3s linear;
 }
 
 .phone-nummer:hover{
@@ -2049,6 +2081,7 @@ body{
 	background-position: center;
 	background-size: cover;
 	opacity: 0.3;
+	transition: opacity 0.3s linear;
 }
 
 .home-nummer-icon:hover{
@@ -2153,6 +2186,9 @@ body{
 	background-size: cover;
 	border: 0;
 	outline: none;
+	cursor: pointer;
+	transition: width 0.2s linear;
+	transition: height 0.2s linear;
 }
 
 .form-title-close:hover{
@@ -2257,6 +2293,9 @@ body{
 	border: 0;
 	border-bottom: 2px solid #002262;
 	outline: none;
+	cursor: pointer;
+	box-shadow: 0 0 10px 7px transparent;
+	transition: box-shadow 0.4s linear;	
 }
 
 .input-submit-form:hover{
@@ -2368,6 +2407,9 @@ body{
 	border: 0;
 	border-bottom: 2px solid #002262;
 	outline: none;
+	cursor: pointer;
+	box-shadow: 0 0 10px 7px transparent;
+	transition: box-shadow 0.4s linear;	
 }
 
 .succesful-button:hover{
@@ -2786,6 +2828,7 @@ body{
 	
 	.menu-item{
 		display: none;
+		height: auto;
 		font-size: 24px;
 		margin-right: 18px;
 		line-height: 47px;
@@ -2799,8 +2842,10 @@ body{
 	}
 	
 	.menu-phone{
+		height: auto;
+		margin-top: 25px;
+		margin-bottom: 22px;
 		margin-right: 0;
-		margin-bottom: 30px;
 		font-size: 17px;
 	}
 	
@@ -3386,6 +3431,7 @@ body{
 	
 	.menu-phone{
 		font-size: 14px;
+		margin-top: 0;
 	}
 	
 	.menu-phone-item{
@@ -3607,17 +3653,17 @@ body{
 	}
 	
 	.prise-form-succesful.active{
-		width: 530px;
+		width: 100%;
     	height: 900px;
     	top: 0;
     	left: 0;
 	}
 	
 	.prise-form-succesful.fixed{
-		width: 530px;
+		width:100%;
     	height: 900px;
 		top: 0;
-		left: 8;
+		left: 0;
 	}
 		
 }
@@ -3674,8 +3720,8 @@ body{
 		        justify-content: center;
 		-ms-flex-wrap: wrap;
 		    flex-wrap: wrap;
-		width: 100%;
-		margin: 0;
+		width: 93%;
+		margin: 0 auto;
 	}
 	
 	.intro-title{
@@ -3856,7 +3902,7 @@ body{
 	}
 	
 		.servis-item{
-		height: 435px;
+		height: 506px;
 	}
 	
 		.servis-item:nth-of-type(1)::after {
@@ -3866,16 +3912,16 @@ body{
 		.servise-title{
 		font-size: 26px;
 		padding-top: 20px;
-		margin-bottom: 0;
+		margin-bottom: 15px;
 	}
 		
 		.item-title{
-		font-size: 16px;
+		font-size: 20px;
 		line-height: 20px;
 	}
 		
 		.item-suptitle{
-		font-size: 14px;
+		font-size: 16px;
 		line-height: 20px;
 	}
 		
@@ -3884,7 +3930,7 @@ body{
 	}
 	
 	.item-info{
-		height: 420px;
+		height: 490px;
 		top: 8px;
     	left: 8.5px;
 	}
@@ -3895,8 +3941,8 @@ body{
 		
 		.item-button{
 		margin-top: 20px;
-		height: 30px;
-		width: 70%;
+		height: 40px;
+		width: 90%;
 		font-size: 13px;
 	}
 		

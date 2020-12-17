@@ -1,6 +1,13 @@
-$('.phone-button').click(function() {
+$('.phone-button, .intro-button, .item-button, .prise-button').click(function(){
 	$('#zatmenie').addClass('active');
 	$('.head--fixed').addClass('gray');
+});
+
+$('.item-button, .prise-button').click(function(){
+	$('.prise-item-before').addClass('servise');
+});
+
+$('.phone-button').click(function() {
 	$('#prise-item-head').addClass('active');
 	if ( $(".head").hasClass("head--fixed") ) {
 		$('#prise-item-head').addClass('top');
@@ -12,30 +19,26 @@ $('.phone-button').click(function() {
  });
 
 $('.intro-button').click(function() {
-	$('#zatmenie').addClass('active');
 	$('#prise-item-intro').addClass('active');
-	$('.head--fixed').addClass('gray');
  });
 
 $('.item-button').click(function() {
-	$('#zatmenie').addClass('active');
 	$('#prise-item-servise').addClass('active');
-	$('.head--fixed').addClass('gray');
-	$('.prise-item-before').addClass('servise');
  });
 
 $('.prise-button').click(function() {
-	$('#zatmenie').addClass('active');
 	$('#prise-item').addClass('active');
-	$('.head--fixed').addClass('gray');
-	$('.prise-item-before').addClass('servise');
  });
 
-$('.form-title-close').click(function() {
+$('.form-title-close, .succesful-button').click(function() {
 	$('#zatmenie').removeClass('active');
+	$('.head--fixed').removeClass('gray');
+ });
+
+
+$('.form-title-close').click(function() {
 	$('.prise-item-before').removeClass('active');
 	$('.menu-item').removeClass('active');
-	$('.head--fixed').removeClass('gray');
  });
 
 $('.input-submit-form').click(function() {
@@ -52,35 +55,13 @@ $('.input-submit-form').click(function() {
  });
 
 $('.succesful-button').click(function() {
-	$('#zatmenie').removeClass('active');
 	$('.prise-form-succesful').removeClass('active');
-	$('.head--fixed').removeClass('gray');
- });
+});
 
 
-$('#flet').click(function() {
-	$('#flets').addClass('active');
- });
-
-$('#office').click(function() {
-	$('#offices').addClass('active');
- });
-
-$('#comersian').click(function() {
-	$('#comersians').addClass('active');
- });
-
-$('#destroy').click(function() {
-	$('#destroys').addClass('active');
- });
-
-$('#get-in').click(function() {
-	$('#get-ins').addClass('active');
- });
-
-$('#other').click(function() {
-	$('#others').addClass('active');
- });
+$('.service-buttons .info-button').click(function(){
+	$(this).parent().parent().find('.item-info').addClass('active');
+});
 
 $('.info-close').click(function() {
 	$('.item-info').removeClass('active');
@@ -107,6 +88,7 @@ $('.menu-item, .phone-button').click(function() {
  });
 
 
+$(document).ready(function(){  
 $(function(){
  var header=$("#head"),
  introH = $("#head").innerHeight(),
@@ -147,6 +129,9 @@ $(function(){
    $("#head").toggleClass("active");	
  });	
 });
+	
+});
+	
 	
 
 	
